@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <title>Elite Salon - Reservation</title>
+  <!-- font awesome 6 -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- bootstrap 5 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <!--flatpicker-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!--sweet alert-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.37/sweetalert2.min.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/reservation.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid d-flex">
+          <a class="navbar-logo" href="index.html"><img alt="logo" src="img/logo.png"/></a>
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item d-flex ">
+              </li>
+            </ul>
+          <i class="fa-solid fa-bars menu-bar" id="menubar"></i>
+          <div class="sidenav" id="sidenav">
+            <div class="d-flex justify-content-around">
+              <ul class="navigation">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="hair.html" >Hair</a></li>
+                <li><a href="nail.html" >Nails</a></li>
+                <li><a href="spa.html" >SPA</a></li>
+                <li><a href="makeup.html" >Makeup</a></li>
+                <li><a href="skincare.html" >Skin Care</a></li>
+                <li><a href="reservation.html" >Reservation</a></li>
+                <li><a href="news.html" >News</a></li>
+                <li><a href="products.html" >Our Products</a></li>
+              </ul>
+            <ul>
+              <p class="text-center mb-5">Contact</p>
+              <li>1 234 56 789</li>
+              <li>2277 LOREM AVE.,</li>
+              <li>SAN DIEGO, CA 22553</li>
+              <li>SUN - THUR : 9 am - 5 pm</li> 
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube pe-2"></i></a> 
+                <a href="#"><i class="fa-brands fa-instagram pe-2"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook pe-2"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest pe-2"></i></a>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <header class="header">
+     <div class="container text-center d-flex">
+      <div class="reserve-form">
+        <form class="p-3" id="form1" onsubmit="func()">
+          <h1>TIME TO HAVE THE <span>MAGIC</span> HAPPEN</h1>
+          <div>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" class="form-control" required>
+            <div class="invalid-feedback d-none" id="nameAlert">
+              First character must be capital,name from 3 to 11 characters
+            </div>
+          </div>
+          <div>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" class="form-control" required>
+          </div>
+          <div >
+            <label for="lname">Your Email:</label><br>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div>
+            <button  class="btn mt-3" id="next1"  disabled>Next</button>        
+          </div>
+        </form>
+        <form class="p-3" id="form2" onsubmit="func()">
+          <h1>TIME TO HAVE THE <span>MAGIC</span> HAPPEN</h1>
+          <div >
+            <label for="lname">Phone:</label><br>
+            <input type="number" id="phone" name="number" class="form-control" required>
+            <div class="invalid-feedback d-none" id="phoneAlert">
+              Phone must be 9 numbers
+            </div>
+          </div>
+          <div >
+            <label for="lname">Day & Date:</label><br>
+            <input type="date" id="date" name="date" class="form-control" required>
+          </div>
+          <div>
+            <label>what do you want to do?</label><br>
+            <select name="Services" id="Services" class="form-control" required>
+              <option value="">Services</option>
+              <option value="Hair">Hair</option>
+              <option value="Nails">Nails</option>
+              <option value="SPA">SPA</option>
+              <option value="Makeup">Makeup</option>
+              <option value="Skin Care">Skin Care</option>
+            </select>
+          </div>
+          <div>
+            <button  class="btn mt-3" id="back1">Back</button>        
+            <button  class="btn mt-3" id="next2" disabled>Next</button>        
+          </div>
+        </form>
+        <form class="p-3" id="form3">
+          <h1>TIME TO HAVE THE <span>MAGIC</span> HAPPEN</h1>
+          <div >
+            <label for="lname">Message:</label><br>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+          </div>
+          <div>
+            <button  class="btn mt-3" id="submit">Submit</button>             
+          </div>
+        </form>
+      </div>
+     </div>
+    </header>
+
+    <!--start footer section-->
+    <footer class="footer px-3">
+            <div class="footer-content">
+              <img src="img/logo.png" alt="salon logo"/>
+              <p>Want to stay updated? Enter your email and sign up to our mailing list.</p>
+              <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn mb-3 ">Submit</button>
+              </form>
+              <ul class="d-flex justify-content-between">
+                <li><a href="#"><i class="fa-brands fa-youtube pe-2"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram pe-2"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook pe-2"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest pe-2"></i></a></li>
+              </ul>
+            </div>
+    </footer>
+    <!--end footer section-->
+
+
+  <!-- bootstrap 5 -->
+  <script src="js/bootstrap.bundle.min.js"></script>  
+  <!--flatpicker-->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!--sweet alert-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.37/sweetalert2.all.min.js" integrity="sha512-3hFcDwNjb1Fi8b5SvvrvkoWHniN7awVYfdULoVIYRXIdIh6nX/0HUwp7ELi1VzxZuXCGwhUfXxQ3vnOD6COAmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--jquery-->
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <!--custom js-->
+  <script src="js/reservation.js"></script>
+</body>
+</html>
+
