@@ -74,6 +74,257 @@
     background-color: rgba(198,182,167,0.9);
 }
 /**/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    width: 90%;
+    height: 90%;
+    padding:0px 11px;
+    padding-top: 10px;
+  
+}
+.col-md-3{
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 23%;
+    text-align: center;
+    padding: 0px;
+    cursor: pointer;
+    border-radius: 3%;
+    /* border: 1px solid black; */
+    padding-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
+}
+.details{
+    padding: 0px 30px;
+}
+p{
+   color:black;
+   font-size: 15px;
+   padding-top: 10px ;
+  margin-bottom: 0px;
+}
+h3{
+   font-size: 15px ;
+   font-weight: 600;
+   /* text-align: right; */
+}
+.navright ul{
+ list-style: none;
+}
+.navbar
+{
+    background-color: #c6b6a7;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 99;
+}
+
+.navbar .navbar-logo img
+{
+    padding-left: 20px;
+    width: 80%;
+}
+.header
+{
+    background-image: url("../img/bac.jpg");
+    background-size:cover;
+    background-position:bottom;
+    height: 70vh;
+}
+
+.header h1
+{
+    font-size: 6rem;
+    color: white;
+}
+.header p
+{
+    font-size: 1.5rem;
+    color: white;
+}
+/**/
+.content{
+    position: relative;
+    background-color:#efe3d9;
+}
+.content .nav-link{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px 10px;
+}
+.content .nav-link:hover{
+    transition: .5s;
+    border: 1px solid #e6af90e7;
+    border-radius: 10%;
+}
+.nav-pills .nav-link.active{
+     background-color:#e6af90e7 !important;
+}
+
+.slide{
+    position: absolute;
+    top:67px; 
+    left: 0;
+    right: 0;
+    height: 90vh;
+    position: fixed;
+    /* bottom: 0; */
+    /* background-color: rgba(0, 0, 0, .4); */
+    background-color: rgba(80, 75, 70, 0.5);
+     display: none; 
+    animation: animateSlider 2s;
+    transition: 1s ease-in-out;
+}
+
+@keyframes animateSlider {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.slide .slide-item{
+
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animateSliderContent 3s  ;
+}
+.slide img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 3%;
+}
+@keyframes animateSliderContent {
+    from{
+        transform: translate(-50%, -50%) scale(0);
+    }
+    to{
+        transform:  translate(-50%, -50%) scale(1);
+    }
+}
+.prev{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 9;
+    color: #FFF;
+}
+.next{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 9;
+    color: #FFF;
+}
+
+
+.number{
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    font-size: 25px;
+    z-index: 9;
+    background-color: #FFF;
+    padding: 2px;
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+}
+
+.active{
+    display: block;
+}
+
+.close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #FFF;
+    cursor: pointer;
+}
+.price{
+    padding: 0px;
+    margin-top: 0%;
+}
+
+
+
+
+/**/
+.footer
+{
+    border-top: 1px  solid black;
+    background-color: #efe3d9;
+}
+.footer .footer-content
+{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.footer .footer-content input
+{
+    width: 400px;
+    margin: auto;
+}
+.footer .footer-content button
+{
+    background-color:#e6cdba;
+}
+.footer .footer-content ul
+{
+    margin: auto;
+    width: 30%;
+    padding-bottom: 20px;
+}
+.footer .footer-content ul a
+{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+}
+.footer .footer-content ul li:hover
+{
+    width: 30px;
+    height: 30px;
+    background-color: #e6cdba;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+/**/
+
+.icons {
+    margin-bottom: 10px;
+  
+}
+.icon{
+    display: none;
+}
+
+.icons i{
+    color: #f9c854;
+    
+}
+
 
 /*footer*/
 /**/
