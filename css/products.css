@@ -274,6 +274,10 @@ h3{
     border-top: 1px  solid black;
     background-color: #efe3d9;
 }
+.footer img
+{
+    width: 10%;
+}
 .footer .footer-content
 {
     width: 50%;
