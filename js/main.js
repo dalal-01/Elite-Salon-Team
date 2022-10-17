@@ -23,36 +23,41 @@ $(window).scroll(function () {
 });
 // products section
 var items=document.getElementsByClassName("col-md-3");
-var slideitem=document.getElementById("slide-item")
+var slideitem=document.getElementById("slide-item");
 var next=document.getElementById("next");
 var prev=document.getElementById("prev");
 var close=document.getElementById("close");
 var price=document.getElementById("price");
 var desc=document.getElementById("desc");
 var icons=document.getElementById("icons");
-
+var imgs=document.querySelectorAll("img");
+var heart=document.getElementsByClassName("fa-heart");
 
 let d;
 let p;
 let star;
 let cname;
 var index=0;
-for(let i=0;i<items.length;i++){
-    items[i].addEventListener('click',function(e){
-    var img=e.target.src;
-    p=items[i].childNodes[5].childNodes[3].innerHTML;
-    d=items[i].childNodes[3].innerHTML;
-    cname=items[i].childNodes[7].childNodes[1].className;
-    icons.childNodes[9].setAttribute("class", cname);
-    slideitem.childNodes[3].setAttribute('src',img);
+for(let i=0;i<imgs.length;i++){
+   imgs[i].addEventListener('click',function(e){
+   var img=imgs[i].getAttribute('src');
+   console.log(imgs[i]);
+   console.log(img);
+
+    p=imgs[i].parentNode.childNodes[5].childNodes[3].innerHTML;
+    d=imgs[i].parentNode.childNodes[3].innerHTML;
+    cname=imgs[i].parentNode.childNodes[7].childNodes[1].className;
+     icons.childNodes[9].setAttribute("class", cname);
+   slideitem.childNodes[3].setAttribute('src',img);
     price.innerHTML=p;
     desc.innerHTML=d;
-     slide.classList.add('active');
-    
-      index=i;
+    slide.classList.add('active');
    
+      index=i;
+  
     })
- }
+}
+
  close.addEventListener('click',function(e){
     slide.classList.remove('active');
 })
@@ -72,9 +77,9 @@ function changeimg(i){
    
     let img=items[index].childNodes[1].getAttribute('src');
    slideitem.childNodes[3].setAttribute('src',img);
-   p=items[i].childNodes[5].childNodes[3].innerHTML;
-    d=items[i].childNodes[3].innerHTML;
-    cname=items[i].childNodes[7].childNodes[1].className;
+   p=imgs[i].parentNode.childNodes[5].childNodes[3].innerHTML;
+    d=imgs[i].parentNode.childNodes[3].innerHTML;
+    cname=imgs[i].parentNode.childNodes[7].childNodes[1].className;
     icons.childNodes[9].setAttribute("class", cname);
     price.innerHTML=p;
     desc.innerHTML=d;   
@@ -87,5 +92,4 @@ function changeimg(i){
     if(e.keyCode==27)
     close.click();
 }
-
 
