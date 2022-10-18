@@ -40,13 +40,10 @@ h3{
    font-weight: 600;
    /* text-align: right; */
 }
-<<<<<<< HEAD
-=======
 .header h1
 {
     z-index: 1;
 }
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 .navright ul{
  list-style: none;
 }
@@ -170,10 +167,7 @@ h3{
     right: 0;
     height: 90vh;
     position: fixed;
-<<<<<<< HEAD
-=======
     z-index: 99;
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
     /* bottom: 0; */
     /* background-color: rgba(0, 0, 0, .4); */
     background-color: rgba(80, 75, 70, 0.5);
@@ -290,9 +284,6 @@ h3{
     background-color: #e6af90e7;
     font-size: 1rem;
     color: rgba(0,0,0,0.5);
-<<<<<<< HEAD
-
-=======
 }
 .heart-btn
 {
@@ -304,7 +295,6 @@ h3{
 .heart-btn:hover
 {
     background-color: transparent;
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }
 .bag-list
 {
@@ -317,10 +307,6 @@ h3{
     width: 400px;
     z-index: 999909999;
     background-color: #e6b090fb;
-<<<<<<< HEAD
-    border-radius: 4px;
-}
-=======
     border-radius: 10px;
 }
 .heart-list
@@ -380,7 +366,6 @@ h3{
 .heart-list::-webkit-scrollbar-thumb:hover {
     background: white; 
   }
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 .close-btn
 {
     position: absolute;
@@ -390,11 +375,7 @@ h3{
     font-size: 1.5rem;
     cursor: pointer;
 }
-<<<<<<< HEAD
-.bag-item
-=======
 .bag-item , .heart-item
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 {
     background-color: white;
     margin-top: 10px;
@@ -406,16 +387,12 @@ h3{
     display: flex;
     align-items: center;
 }
-<<<<<<< HEAD
-.bag-item img
-=======
 .heart-item img
 {
     width: 130px;
     height: 90px;
 }
 .bag-item img 
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 {
     width: 130px;
     height: 90px;
@@ -431,10 +408,7 @@ h3{
     width: 60px;
     height: 40px;
     margin: auto;
-<<<<<<< HEAD
-=======
     margin-bottom: 10px;
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }
 .bag-list button:hover
 {
@@ -451,8 +425,6 @@ h3{
     color:red;
     cursor: pointer;
 }
-<<<<<<< HEAD
-=======
 .faheart
 {
     padding-right: 5px;
@@ -464,7 +436,6 @@ h3{
 {
     color: black;
 }
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 .total-price
 {
     justify-content: space-between;

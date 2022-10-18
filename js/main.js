@@ -89,12 +89,6 @@ document.onkeydown = function (e) {
 /*products bag*/
 let bag = document.getElementById("bag");
 let closeBtn = document.getElementById("closeBtn");
-<<<<<<< HEAD
-let removeItem = document.getElementsByClassName("removeItem");
-let products = 0;
-
-bag.addEventListener("click", function () {
-=======
 let bagList = document.getElementById("bagList");
 let heartList = document.getElementById('heartList');
 let heartBtn = document.getElementById("heartBtn");
@@ -110,7 +104,6 @@ bag.addEventListener("click", function () {
     heartList.classList.remove("d-block");
   } 
 
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
    if (bagList.classList.contains("d-none")) {
      bagList.classList.remove("d-none");
      bagList.classList.add("d-block");
@@ -132,11 +125,7 @@ if (document.readyState == "loading") {
 }
 
 function ready() {
-<<<<<<< HEAD
-
-=======
   //cart
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
    for (let i = 0; i < removeItem.length; i++) {
       let button = removeItem[i];
       button.addEventListener("click",removeCartItem);
@@ -155,8 +144,6 @@ function ready() {
       let button = addBasket[i];
       button.addEventListener('click',addToCart);
    }
-<<<<<<< HEAD
-=======
    //heart
    let removeHeart = document.getElementsByClassName('removeHeart');
    for(let i=0;i<removeHeart.length;i++)
@@ -170,7 +157,6 @@ function ready() {
     let button = addHeart[i];
     button.addEventListener('click',addToHeatList);
    }
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }
 //
 function changeProductNo()
@@ -186,10 +172,7 @@ function removeCartItem(event)
    updateTotal();
    products = products - 1;
    changeProductNo();
-<<<<<<< HEAD
-=======
    changeHeight();
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }
 //update total
 function updateTotal() {
@@ -266,8 +249,6 @@ function addItemToCart(img,title,price)
    bagItem.getElementsByClassName("quantity")[0].addEventListener('click',changeItemQuantity);
    products = products + 1;
    changeProductNo();
-<<<<<<< HEAD
-=======
    changeHeight();
 }
 //change cart height
@@ -377,5 +358,4 @@ function changeHeartHeight()
   {
     heartList.style.bottom = "70%";
   }
->>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }
