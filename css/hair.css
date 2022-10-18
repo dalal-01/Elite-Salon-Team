@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    list-style: none;
+
+}
+body{
+    height: 5000px;
+}
+.header
+{
+    background-image: url("../img/bbg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+.header h1
+{
+    font-size: 6rem;
+    color: white;
+    margin-left: 2rem;
+}
+.header p
+{
+    font-size: 1.5rem;
+    color: white;
+}
+.navbar
+{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 99999999;
+}
+.navbar .navbar-logo img
+{
+    padding-left: 20px;
+    width: 50%;
+}
+.menu-bar
+{
+    color: rgba(0,0,0,0.5);
+    font-size: 2rem;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    z-index: 99;
+}
+.sidenav
+{
+    background-color: rgba(0, 0, 0,0.6);
+    box-shadow: inset 10px 10px 10px rgb(90, 89, 89);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem  1rem;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+.sidenav ul
+{
+    padding-top: 4rem;
+}
+.sidenav  li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.sidenav li
+{
+    color: white;
+    padding: .8rem;
+    width: 100%;
+    text-align: center;
+}
+.sidenav .navigation li:hover
+{
+    background-color: rgba(198,182,167,0.9);
+}
+.sidenav li a i
+{
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 6px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.sidenav li a i:hover
+{
+    background-color: rgba(198,182,167,0.9);
+}
+/**/
+.concept
+{
+    background-color: white;
+}
+.concept img
+{
+    border: .5px solid black;
+    border-bottom-left-radius:600px ;
+    border-bottom-right-radius:600px ;
+    height: 120%;
+}
+.concept a
+{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
+}
+.concept a:hover
+{
+    background-color: #c6b6a7;
+}
+/**/
+
+/* start sec1 */
+.sec1 h1 {
+    text-align: center;
+    font-weight: 600;
+}
+.hair-cut img{
+    width: 24rem;
+    height: 20rem;
+    transition: all 2s;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+}
+.hair-cut img:hover{
+    transform: scale(1.1);
+}
+.hair-ext img {
+    width: 24rem;
+    height: 20rem;
+    transition: all 2s;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+}
+.hair-ext img:hover{
+    transform: scale(1.1);
+}
+.hair-color img {
+    width: 24rem;
+    height: 20rem;
+    transition: all 2s;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+}
+.hair-color img:hover{
+    transform: scale(1.1);
+}
+.color h2 {
+    margin-left: 2rem;
+}
+.color .row .cl {
+    width: 10rem;
+    height: 10rem;
+}
+.hair-pr .row .pr {
+    width: 15rem;
+    height: 10rem;
+}
+.sec1 .pro img{
+    width: 24rem;
+    height: 20rem;
+    margin-left: 2rem;
+    transition: all 2s;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+}
+.pro img:hover{
+    transform: scale(1.1);
+}
+.sec1 .hair ul{
+    list-style: none;
+}
+   /*end sec1*/
+
+   /* start sec2 */
+.sec2 {
+    background-color: #f3f2f2;
+}
+.sec2 h2 {
+    font-weight: 600;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+.sec2 .nav{
+    margin-left: 24rem;
+}
+.sec2 .nav-link{
+    color: #000;
+}
+.sec2 .nav-link.active{
+    background-color: #c6b6a7;
+}
+.sec2 .tab-pane img {
+    width: 17rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    transition: all 2s;
+}
+.sec2 .tab-pane img:hover{
+    transform: scale(1.1);
+}
+   /* end sec2 */
+
+   /* start sec3 */
+.sec3 h2 {
+    font-weight: 600;
+}
+.sec3 .carousel-item img{
+    width: 10rem;
+
+}
+.sec3 .carousel-item a{
+    text-decoration: none;
+    color: #000;
+}
+.sec3 .carousel-item a:hover{
+    color:#c6b6a7;
+}
+.sec3 .carousel-indicators .s {
+    background-color:#c6b6a7;
+
+}
+.sec3 .b {
+    background-color: #c6b6a7;
+    border-radius: 40%;
+}
+   /* end sec3 */
+
+   /* start sec4 */
+.sec4 {
+   background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+.sec4 h2 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding: 5rem;
+}
+.sec4 img {
+    width: 10%;
+    height: 4rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.sec4 p{
+    font-size: .8rem;
+}
+   /* end sec4 */
+
+   /* start sec5 */
+.sec5 h2 {
+    font-weight: 600;
+}
+.sec5 img {
+    height: 25rem;
+}
+   /* end sec5 */
+
+   /* start footer*/
+.footer
+{
+    border-top: 1px  solid black;
+    background-color: #efe3d9;
+}
+.footer img
+{
+    width: 10%;
+}
+.footer .footer-content
+{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.footer .footer-content input
+{
+    width: 400px;
+    margin: auto;
+}
+.footer .footer-content button
+{
+    background-color:#e6cdba;
+}
+.footer .footer-content ul
+{
+    margin: auto;
+    width: 30%;
+    padding-bottom: 20px;
+}
+.footer .footer-content ul a
+{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+}
+.footer .footer-content ul li:hover
+{
+    width: 30px;
+    height: 30px;
+    background-color: #e6cdba;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+   /* end footer*/
+
+   /*media*/
+@media (max-width: 500px) 
+{   .navbar-collapse
+    {
+        background-color: rgb(198, 182, 167) !important;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-collapse li a:hover
+    {
+        color: white;
+    }
+    .navbar-toggler
+    {
+        border: none;
+        outline: none;
+    }
+    .menu-bar
+    {
+       position: fixed;
+       top: 1.5rem;
+    }
+    .navbar .navbar-logo img
+    {
+        padding-left: 50px;
+    }
+    .footer .footer-content
+    {
+     width: 100%;
+    }
+     .footer .footer-content input
+     {
+      width: 80%;
+     }
+     .footer ul 
+     {
+         margin: auto;
+     }
+}
+@media (max-width: 955px) and (min-width:501px)
+{
+    .navbar-collapse
+    {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-toggler
+    {
+        border: none;
+        outline: none;
+    }
+    .navbar-collapse li a:hover
+    {
+        color: white;
+    }
+    .menu-bar
+    {
+    position: fixed;
+       top: 1.5rem;
+    }
+    .navbar .navbar-logo img
+    {
+        padding-left: 50px;
+    }
+
+}

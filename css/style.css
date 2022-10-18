@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+.header
+{
+    background-image: url("../img/background1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    animation: animate 20s ease-in-out infinite;
+}
+@keyframes animate
+{
+    0%,100%{
+        background-image: url("../img/background1.png");
+    }
+    15%
+    {
+        background-image: url("../img/background2.png");
+    }
+    30%
+    {
+        background-image: url("../img/background3.png");
+    }
+    45%
+    {
+        background-image: url("../img/background4.png");
+    }
+    60%
+    {
+        background-image: url("../img/background5.png");
+    }
+    75%
+    {
+        background-image: url("../img/background6.png");
+    }
+    90%
+    {
+        background-image: url("../img/background7.png");
+    }
+}
+.overlay
+{
+    background-color: rgba(198,182,167,0.4);
+    width: 400px;
+    height: 280px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+.header h1
+{
+    font-size: 4rem;
+    color: white;
+}
+.header p
+{
+    font-size: 1.5rem;
+    color: white;
+}
+.navbar
+{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 99999999;
+}
+.navbar .navbar-logo img
+{
+    padding-left: 20px;
+    width: 50%;
+}
+.menu-bar
+{
+    color: rgba(0,0,0,0.5);
+    font-size: 2rem;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    z-index: 99;
+}
+.sidenav
+{
+    background-color: rgba(0, 0, 0,0.6);
+    box-shadow: inset 10px 10px 10px rgb(90, 89, 89);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem  1rem;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+.sidenav ul
+{
+    padding-top: 4rem;
+}
+.sidenav  li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.sidenav li
+{
+    color: white;
+    padding: .8rem;
+    width: 100%;
+    text-align: center;
+}
+.sidenav .navigation li:hover
+{
+    background-color: rgba(198,182,167,0.9);
+}
+.sidenav li a i
+{
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 6px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.sidenav li a i:hover
+{
+    background-color: rgba(198,182,167,0.9);
+}
+/**/
+.concept
+{
+    background-color: white;
+}
+.concept img
+{
+    border: .5px solid black;
+    border-bottom-left-radius:600px ;
+    border-bottom-right-radius:600px ;
+    height: 120%;
+}
+.concept a
+{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
+}
+.concept a:hover
+{
+    background-color: #c6b6a7;
+}
+/**/
+.aboutus
+{
+    background-color: #efe3d9;
+}
+
+/**/
+.ourservices
+{
+    background-color: #e6cdba;
+}
+.ourservices .p
+{
+    color: #ac896c;
+    font-size: .875rem;
+}
+.ourservices img
+{
+    width: 70%;
+    height: 55%;
+    border: 1px solid #e7b289;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    cursor: pointer;
+}
+.ourservices .service-info
+{
+    background-color: #d3beaf;
+    border: 1px solid #e7b289;
+    width: 70%;
+    height: 30%;
+    text-align: center;
+}
+.ourservices .service-info p
+{
+    font-size: .875rem;
+}
+.ourservices .service-info h3
+{
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+.ourservices .service-info a
+{
+    text-decoration: none;
+    color: black;
+}
+.ourservices .service-info a:hover
+{
+    border: .5px solid black;
+    padding: 2px 2px;
+}
+.services
+{
+  position: relative;
+  overflow: hidden;
+}
+.serv:hover .visitus
+{
+    top: 0px;
+}
+.services .visitus
+{
+    top: 400px;
+    width: 65%;
+    height: 55%;
+    position: absolute;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    background-color: rgba(217, 189 ,167,0.5);
+}
+.visitus a
+{
+    position: relative;
+    top: 50%;
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.visitus a:hover
+{
+    color: white;
+}
+/**/
+.access iframe
+{
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    border-top-right-radius: 90%;
+}
+.access button 
+{
+    background-color: #e6cdba;
+}
+.access button:hover
+{
+    background-color: #e6cdba;
+    border: 1px solid white;
+    color: white;
+}
+/**/
+.products
+{
+    background-color: #e6cdba;
+}
+.products img
+{
+   border: 1px solid rgb(88, 87, 87);
+}
+.products .product-reac
+{
+    width: 70%;
+    font-size: .785rem;
+}
+.products .product-reac i
+{
+    padding-top: 3px;
+    padding-right: 3px;
+}
+.products .product-reac button
+{
+    background-color: transparent;
+    border: none;
+    
+}
+/**/
+.feedback
+{
+    background-color: #efe3d9;
+}
+.feedback .feedback1
+{
+    width: 600px;
+    height: 300px;
+    background-color: #e6cdba;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+}
+/**/
+.footer
+{
+    border-top: 1px  solid black;
+    background-color: #efe3d9;
+}
+.footer img
+{
+    width: 10%;
+}
+.footer .footer-content
+{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.footer .footer-content input
+{
+    width: 400px;
+    margin: auto;
+}
+.footer .footer-content button
+{
+    background-color:#e6cdba;
+}
+.footer .footer-content ul
+{
+    margin: auto;
+    width: 40%;
+    padding-bottom: 20px;
+}
+.footer .footer-content ul a
+{
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    height: 50px;
+    padding-left: 5px;
+}
+.footer .footer-content ul li a:hover
+{
+    background-color: #e6cdba;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/*media*/
+@media (max-width: 500px) 
+{   .navbar-collapse
+    {
+        background-color: rgb(198, 182, 167) !important;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-collapse li a:hover
+    {
+        color: white;
+    }
+    .navbar-toggler
+    {
+        border: none;
+        outline: none;
+    }
+    .menu-bar
+    {
+    position: fixed;
+       top: 1.5rem;
+    }
+    .navbar .navbar-logo img
+    {
+        padding-left: 50px;
+    }
+    .our-concept
+    {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .aboutus img
+    {
+        display: none;
+    }
+    .aboutus
+    {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .access
+    {
+        padding-top: 30px;
+        text-align: center;
+    }
+    .access iframe
+    {
+        padding-top: 20px;
+        width: 100%;
+        height: 80%;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        border-top-right-radius: 10%;
+    }
+    .products img
+    {
+       width: 100%;
+    }
+    .carousel-inner
+    {
+       padding-top: 10px  !important;
+    }
+    .feedback
+    {
+        padding-bottom: 50px;
+    }
+    .footer .footer-content
+   {
+    width: 100%;
+   }
+    .footer .footer-content input
+    {
+     width: 80%;
+    }
+    .footer ul 
+    {
+        margin: auto;
+    }
+}
+@media (max-width: 955px) and (min-width:501px)
+{
+    .navbar-collapse
+    {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-toggler
+    {
+        border: none;
+        outline: none;
+    }
+    .navbar-collapse li a:hover
+    {
+        color: white;
+    }
+    .menu-bar
+    {
+    position: fixed;
+       top: 1.5rem;
+    }
+    .navbar .navbar-logo img
+    {
+        padding-left: 50px;
+    }
+    .our-concept
+    {
+        padding-top: 50px;
+    }
+    .aboutus .row
+    {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    .aboutus img
+    {
+        height: 100%;
+        padding: 0;
+    }
+    .ourservices .service-info
+    {
+    height: 60%;
+    }
+    .access
+    {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .access iframe
+    {
+        height: 80%;
+        width: 100%;
+    }
+}

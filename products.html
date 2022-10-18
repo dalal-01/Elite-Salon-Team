@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <title>Elite Salon - Our Products</title>
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--sweet alert-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.37/sweetalert2.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid ">
+          <a class="navbar-logo" href="index.html"><img alt="logo" src="img/logo.png"/></a>
+          <button type="button" class="bag-btn btn position-relative ms-auto pe-4">
+            <i class="fa-solid fa-bag-shopping" id="bag"></i>
+            <span class="products-no position-absolute top-0 end-50  mt-3 translate-middle badge rounded-pill" id="proNo">
+              0
+            </span>
+          </button>
+          <i class="fa-solid fa-bars menu-bar" id="menubar"></i>
+          <div class="sidenav" id="sidenav">
+            <div class="d-flex justify-content-around">
+              <ul class="navigation">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="hair.html" >Hair</a></li>
+                <li><a href="nail.html" >Nails</a></li>
+                <li><a href="spa.html" >SPA</a></li>
+                <li><a href="makeup.html" >Makeup</a></li>
+                <li><a href="skincare.html" >Skin Care</a></li>
+                <li><a href="reservation.html" >Reservation</a></li>
+                <li><a href="news.html" >News</a></li>
+                <li><a href="products.html" >Our Products</a></li>
+              </ul>
+            <ul>
+              <p class="text-center mb-5">Contact</p>
+              <li>1 234 56 789</li>
+              <li>2277 LOREM AVE.,</li>
+              <li>SAN DIEGO, CA 22553</li>
+              <li>SUN - THUR : 9 am - 5 pm</li> 
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube pe-2"></i></a> 
+                <a href="#"><i class="fa-brands fa-instagram pe-2"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook pe-2"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest pe-2"></i></a>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+     <header class="header d-flex flex-column justify-content-center  align-items-center ">
+          <h1 class=" text-center">Elite Salon</h1>
+      </header>
+
+      <section class="prod">
+        <div class="content py-5 ">
+          <div class="container  mt-3 ">
+      
+            <ul class="nav nav-pills mb-4 d-flex align-items-start justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">Skin care</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> Hair</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                  type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Makeup</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled"
+                  type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Nail</button>
+              </li>
+            </ul>
+      
+      
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img src="img/face/1.jpg" alt="">
+                    <p>glam glow starter </p>
+                    <div class="details  d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>30$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/2.jpg" alt="">
+                    <p>Moisture Surge</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart "></i>
+                      <h3>50$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/3.jpg" alt="">
+                    <p>Malu Wilz Balance Pro</p>
+                    <div class="details  d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>40$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/4.jpg" alt="">
+                    <p>rose flash balm</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>35$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/5.jpg" alt="">
+                    <p>peel and polish pixi</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>41$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/6.jpg" alt="">
+                    <p>glam glow starter 2 </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>54$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/7.jpg" alt="">
+                    <p>glam glow starter 3</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>20$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/8.jpg" alt="">
+                    <p>The ordinary hyaluronic acid</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>57$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/9.jpg" alt="">
+                    <p>The ordinary peeling solution </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>52$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/10.jpg" alt="">
+                    <p>Kiehl's Eye Cream</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>64$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/11.jpg" alt="">
+                    <p>benefit more for pores </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>39$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/12.jpg" alt="">
+                    <p>Advanced Night Repair Serum </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>45$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/13.jpg" alt="">
+                    <p>face bonding oil</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>41$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/14.jpg" alt="">
+                    <p>CLINIQUE Makeup Remover</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>38$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/15.jpg" alt="">
+                    <p> Super Potent Cleanser </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>64$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/16.jpg" alt="">
+                    <p>Green Skin Care </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>37$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/17.jpg" alt="">
+                    <p>Pink Skin Care </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>48$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/18.jpg" alt="">
+                    <p> FACIAL ROLLER </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>33$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/19.jpg" alt="">
+                    <p>Micellar Cleansing Water </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>43$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/face/20.jpg" alt="">
+                    <p>CeraVe Hydrating Cleanser</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+      
+                </div>
+      
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img src="img/hair/1.jpg" alt="">
+                    <p> Hair Waver</p>
+                    <div class="details  d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>300$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/hair/2.jpg" alt="">
+                    <p>Hair brush</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart "></i>
+                      <h3>300$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/hair/3.jpg" alt="">
+                    <p>Hair brush</p>
+                    <div class="details  d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>40$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/hair/4.jpg" alt="">
+                    <p>OLAPLEX blonde shampoo</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>35$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/hair/5.jpg" alt="">
+                    <p>Hair Straightener</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>41$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/hair/6.jpg" alt="">
+                    <p>olaplex intensive treatment </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>54$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/hair/7.jpg" alt="">
+                    <p>glamglow glow starter </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>20$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/hair/8.jpg" alt="">
+                    <p>Hair Dryer</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>57$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/hair/9.jpg" alt="">
+                    <p>Hair Dryer</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>52$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/hair/10.jpg" alt="">
+                    <p>Comb</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>64$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/hair/11.jpg" alt="">
+                    <p>benefit more for pores </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>39$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/hair/12.jpg" alt="">
+                    <p>Comb </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>45$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+      
+      
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img src="img/makeup/1.jpg" alt="">
+                    <p>glamglow glow starter </p>
+                    <div class="details  d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>30$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/2.jpg" alt="">
+                    <p>Moisture Surge</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart "></i>
+                      <h3>50$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/3.jpg" alt="">
+                    <p>Malu Wilz Balance Pro</p>
+                    <div class="details  d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>40$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/4.jpg" alt="">
+                    <p>rose flash balm</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>35$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/5.jpg" alt="">
+                    <p>peel and polish pixi</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>41$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/6.jpg" alt="">
+                    <p>glamglow glow starter </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>54$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/7.jpg" alt="">
+                    <p>glamglow glow starter </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>20$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/8.jpg" alt="">
+                    <p>The ordinary collection</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>57$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/9.jpg" alt="">
+                    <p>The ordinary collection </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>52$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/10.jpg" alt="">
+                    <p>Kiehl's Eye Cream</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>64$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/11.jpg" alt="">
+                    <p>benefit more for pores </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>39$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/12.jpg" alt="">
+                    <p>Advanced Night Repair Serum </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>45$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/13.jpg" alt="">
+                    <p>face bdfhysd bgjsjd</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>41$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/14.jpg" alt="">
+                    <p>CLINIQUE Makeup Remover</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>38$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/15.jpg" alt="">
+                    <p> Super Potent Cleanser </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>64$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/16.jpg" alt="">
+                    <p>SKIN CARE</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>37$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/17.jpg" alt="">
+                    <p>SKIN CARE</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>48$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/18.jpg" alt="">
+                    <p> FACIAL ROLLER </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>33$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/19.jpg" alt="">
+                    <p>Micellar Cleansing Water </p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>43$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/20.jpg" alt="">
+                    <p>CeraVe Hydrating Cleanser</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/21.jpg" alt="">
+                    <p>CeraVe Hydrating Cleanser</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/22.jpg" alt="">
+                    <p>CeraVe Hydrating Cleanser</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/23.jpg" alt="">
+                    <p>CeraVe Hydrating Cleanser</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/24.jpg" alt="">
+                    <p>CeraVe Hydrating Cleanser</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/25.jpg" alt="">
+                    <p>CeraVe Hydrating Cleanser</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/26.jpg" alt="">
+                    <p>CeraVe Hydrating Cleanser</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/27.jpg" alt="">
+                    <p>CeraVe Hydrating Cleanser</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/makeup/28.jpg" alt="">
+                    <p>CeraVe Hydrating Cleanser</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                tabindex="0">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img src="img/nails/1.jpg" alt="">
+                    <p>nail polish </p>
+                    <div class="details  d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>30$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/2.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart "></i>
+                      <h3>50$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/3.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details  d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>40$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/4.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>35$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/5.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>41$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/6.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>54$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/7.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>20$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/8.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>57$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/9.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>52$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/10.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>64$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/11.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>39$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/12.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>45$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/13.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>41$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/14.jpg" alt="">
+                    <p>nail polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>38$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/15.jpg" alt="">
+                    <p>Gel Polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>64$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/16.jpg" alt="">
+                    <p>Gel Polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>37$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/17.jpg" alt="">
+                    <p>Gel Polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>48$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/18.jpg" alt="">
+                    <p>Gel Polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>33$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/19.jpg" alt="">
+                    <p>Gel Polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>43$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/20.jpg" alt="">
+                    <p>Gel Polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/21.jpg" alt="">
+                    <p>Gel Polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/22.jpg" alt="">
+                    <p>Gel Polish</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/23.jpg" alt="">
+                    <p>Nail File</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/24.jpg" alt="">
+                    <p>Nail File</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/25.jpg" alt="">
+                    <p>Nail File</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/26.jpg" alt="">
+                    <p>Nail File</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/27.jpg" alt="">
+                    <p>Nail File</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/28.jpg" alt="">
+                    <p>Nail File</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/29.jpg" alt="">
+                    <p>Nail polish remover</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/30.jpg" alt="">
+                    <p>Nail polish remover</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="img/nails/31.jpg" alt="">
+                    <p>Nail polish remover</p>
+                    <div class="details d-flex justify-content-between pt-1">
+                      <i class="fa-solid fa-heart"></i>
+                      <h3>70$</h3>
+                    </div>
+                    <div class="icon">
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide">
+        <div class="slide-item" id="slide-item">
+          <div class="number ">
+            <div class="desc mt-3 p-3" id="desc"></div>
+            <div class="price p-3" id="price"></div>
+            <div class="icons p-3" id="icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid "></i>
+            </div>
+            <button type="button" class="addBasket btn btn-dark w-75 py-2  mx-3 fs-4">Add to Basket</button>
+            <button type="button" class="btn btn-outline-danger w-75 py-2  mx-3 fs-4 mt-4">Add to Love</button>
+      
+          </div>
+          <img alt="" class="slide-img p-0">
+        </div>
+        <div class="next" id="next">
+          <i class="fas fas fa-arrow-alt-circle-right"></i>
+        </div>
+        <div class="prev" id="prev">
+          <i class="fas fas fa-arrow-alt-circle-left"></i>
+        </div>
+        <div class="close" id="close">
+          <i class="fas fa-times fa-2x"></i>
+        </div>
+      
+      </section>
+      
+      <section class="bag-list d-none" id="bagList">
+        <div class="bag-items">
+
+         </div>
+         <div class="total-price d-flex">
+          <p>Total Price:</p>
+          <p class="totalPrice" id="totalPrice">$0</p>
+         </div>
+         <div class="close-btn" id="closeBtn">
+          <i class="fa-solid fa-xmark"></i>
+         </div>
+         <div class="w-100 text-center mt-3">
+          <button>Buy</button>
+         </div>
+      </section>
+       <!--start footer section-->
+       <footer class="footer px-4">
+        <div class="footer-content">
+          <img src="img/logo.png" alt="salon logo"/>
+          <p>Want to stay updated? Enter your email and sign up to our mailing list.</p>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn mb-3 ">Submit</button>
+          </form>
+          <ul class="d-flex justify-content-between">
+            <li><a href="#"><i class="fa-brands fa-youtube pe-2"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram pe-2"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook pe-2"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest pe-2"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    <!--end footer section-->
+  
+  <!--sweet alert-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.37/sweetalert2.all.min.js" integrity="sha512-3hFcDwNjb1Fi8b5SvvrvkoWHniN7awVYfdULoVIYRXIdIh6nX/0HUwp7ELi1VzxZuXCGwhUfXxQ3vnOD6COAmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- bootstrap 5 -->
+  <script src="js/bootstrap.bundle.min.js"></script> 
+  <!--jquery-->
+  <script src="js/jquery-3.6.1.min.js"></script> 
+  <!--custom js-->
+  <script src="js/main.js" async></script>
+</body>
+</html>
