@@ -40,6 +40,13 @@ h3{
    font-weight: 600;
    /* text-align: right; */
 }
+<<<<<<< HEAD
+=======
+.header h1
+{
+    z-index: 1;
+}
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 .navright ul{
  list-style: none;
 }
@@ -163,6 +170,10 @@ h3{
     right: 0;
     height: 90vh;
     position: fixed;
+<<<<<<< HEAD
+=======
+    z-index: 99;
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
     /* bottom: 0; */
     /* background-color: rgba(0, 0, 0, .4); */
     background-color: rgba(80, 75, 70, 0.5);
@@ -279,7 +290,21 @@ h3{
     background-color: #e6af90e7;
     font-size: 1rem;
     color: rgba(0,0,0,0.5);
+<<<<<<< HEAD
 
+=======
+}
+.heart-btn
+{
+    background-color: transparent;
+    color: rgba(0,0,0,0.5);
+    border: none;
+    font-size: 2rem;
+}
+.heart-btn:hover
+{
+    background-color: transparent;
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }
 .bag-list
 {
@@ -292,8 +317,70 @@ h3{
     width: 400px;
     z-index: 999909999;
     background-color: #e6b090fb;
+<<<<<<< HEAD
     border-radius: 4px;
 }
+=======
+    border-radius: 10px;
+}
+.heart-list
+{
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    position: fixed;
+    top: 55px;
+    right: 130px;
+    bottom: 70%;
+    width: 400px;
+    z-index: 999909999;
+    background-color: #e6b090fb;
+    border-radius: 10px;
+}
+/* width */
+.bag-list::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+.bag-list::-webkit-scrollbar-track {
+    background: #e4bca7; 
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+.bag-list::-webkit-scrollbar-thumb {
+    background: #f1f1f1; 
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+.bag-list::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
+  /* width */
+.heart-list::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+.heart-list::-webkit-scrollbar-track {
+    background: #e4bca7; 
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+.heart-list::-webkit-scrollbar-thumb {
+    background: #f1f1f1; 
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+.heart-list::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 .close-btn
 {
     position: absolute;
@@ -303,7 +390,11 @@ h3{
     font-size: 1.5rem;
     cursor: pointer;
 }
+<<<<<<< HEAD
 .bag-item
+=======
+.bag-item , .heart-item
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 {
     background-color: white;
     margin-top: 10px;
@@ -315,7 +406,16 @@ h3{
     display: flex;
     align-items: center;
 }
+<<<<<<< HEAD
 .bag-item img
+=======
+.heart-item img
+{
+    width: 130px;
+    height: 90px;
+}
+.bag-item img 
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 {
     width: 130px;
     height: 90px;
@@ -331,6 +431,10 @@ h3{
     width: 60px;
     height: 40px;
     margin: auto;
+<<<<<<< HEAD
+=======
+    margin-bottom: 10px;
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }
 .bag-list button:hover
 {
@@ -347,6 +451,20 @@ h3{
     color:red;
     cursor: pointer;
 }
+<<<<<<< HEAD
+=======
+.faheart
+{
+    padding-right: 5px;
+    font-size: 1.2rem;
+    color:red;
+    cursor: pointer;
+}
+.faheart:hover
+{
+    color: black;
+}
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 .total-price
 {
     justify-content: space-between;

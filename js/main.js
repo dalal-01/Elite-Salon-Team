@@ -89,10 +89,28 @@ document.onkeydown = function (e) {
 /*products bag*/
 let bag = document.getElementById("bag");
 let closeBtn = document.getElementById("closeBtn");
+<<<<<<< HEAD
 let removeItem = document.getElementsByClassName("removeItem");
 let products = 0;
 
 bag.addEventListener("click", function () {
+=======
+let bagList = document.getElementById("bagList");
+let heartList = document.getElementById('heartList');
+let heartBtn = document.getElementById("heartBtn");
+let closeHeartBtn = document.getElementById("closeHeartBtn");
+let removeItem = document.getElementsByClassName("removeItem");
+let products = 0;
+let heartProducts = 0;
+
+
+bag.addEventListener("click", function () {
+  if (heartList.classList.contains("d-block")) {
+    heartList.classList.add("d-none");
+    heartList.classList.remove("d-block");
+  } 
+
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
    if (bagList.classList.contains("d-none")) {
      bagList.classList.remove("d-none");
      bagList.classList.add("d-block");
@@ -114,7 +132,11 @@ if (document.readyState == "loading") {
 }
 
 function ready() {
+<<<<<<< HEAD
 
+=======
+  //cart
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
    for (let i = 0; i < removeItem.length; i++) {
       let button = removeItem[i];
       button.addEventListener("click",removeCartItem);
@@ -133,6 +155,22 @@ function ready() {
       let button = addBasket[i];
       button.addEventListener('click',addToCart);
    }
+<<<<<<< HEAD
+=======
+   //heart
+   let removeHeart = document.getElementsByClassName('removeHeart');
+   for(let i=0;i<removeHeart.length;i++)
+   {
+     let button = removeHeart[i];
+     button.addEventListener('click',removeItemHeart);
+   } 
+   let addHeart = document.getElementsByClassName('addHeart');
+   for(let i=0;i<addHeart.length;i++)
+   {
+    let button = addHeart[i];
+    button.addEventListener('click',addToHeatList);
+   }
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }
 //
 function changeProductNo()
@@ -148,6 +186,10 @@ function removeCartItem(event)
    updateTotal();
    products = products - 1;
    changeProductNo();
+<<<<<<< HEAD
+=======
+   changeHeight();
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }
 //update total
 function updateTotal() {
@@ -224,4 +266,116 @@ function addItemToCart(img,title,price)
    bagItem.getElementsByClassName("quantity")[0].addEventListener('click',changeItemQuantity);
    products = products + 1;
    changeProductNo();
+<<<<<<< HEAD
+=======
+   changeHeight();
+}
+//change cart height
+function changeHeight()
+{
+  let bagList = document.getElementById("bagList");
+  if(products>1)
+  {
+      bagList.style.bottom = "30%";
+  }
+  else
+  {
+    bagList.style.bottom = "50%";
+  }
+}
+
+         /*products heart*/
+heartBtn.addEventListener("click", function () {
+  if (bagList.classList.contains("d-block")) {
+    bagList.classList.add("d-none");
+    bagList.classList.remove("d-block");
+  } 
+  if(heartList.classList.contains('d-none'))
+  {
+    heartList.classList.add('d-block');
+    heartList.classList.remove('d-none');
+  }
+  else
+  {
+    heartList.classList.remove('d-block');
+    heartList.classList.add('d-none');
+  }
+});
+
+closeHeartBtn.addEventListener("click", function () {
+  heartList.classList.add("d-none");
+  heartList.classList.remove("d-block");
+});
+//remove item heart
+function removeItemHeart(event)
+{
+   let buttonClicked = event.target;
+   buttonClicked.parentElement.remove();
+   heartProducts = heartProducts - 1;
+   changeHeartHeight();
+}
+//add to heart list
+function addToHeatList(event)
+{
+   let button = event.target;
+   let img = slideitem.childNodes[3].getAttribute("src");
+   let title = slideitem.childNodes[1].childNodes[1].innerHTML;
+   let price = slideitem.childNodes[1].childNodes[3].innerHTML;
+   addItemToHeart(img,title,price);
+}
+//add item to heart list
+function addItemToHeart(img,title,price)
+{
+   let heartItem = document.createElement('div');
+   heartItem.classList.add("heart-item");
+   let heartItemTitle = document.getElementsByClassName('pro-heart-name');
+   for(let i=0;i<heartItemTitle.length;i++)
+   {
+      if(heartItemTitle[i].innerText === title)
+      {
+         Swal.fire({
+            title: 'FAIL TO ADD!',
+            text: 'This product is already added!',
+            imageUrl: `${img}`,
+            imageWidth: 120,
+            imageHeight: 120,
+            imageAlt: 'Custom image',
+          });
+          return
+      }
+   }
+   let heartItems = document.getElementsByClassName('heart-items')[0];
+   let heartItemContent = 
+   `
+   <img src="${img}" alt="">
+   <div class="pro-info pt-3 text-center">
+     <h3 class="pro-heart-name">${title}</h3>
+     <div class="d-flex justify-content-center">
+       <p class="pro-price">${price} </p>
+     </div>
+   </div>
+   <i class="fa-solid fa-heart faheart removeHeart"></i>
+   `;
+   heartItem.innerHTML = heartItemContent;
+   heartItems.append(heartItem);
+   heartItem.getElementsByClassName("removeHeart")[0].addEventListener('click',removeItemHeart);
+   heartProducts = heartProducts + 1;
+   changeHeartHeight();
+}
+//change heart hight
+function changeHeartHeight()
+{
+  if(heartProducts>2)
+  {
+    heartList.style.bottom = "30%";
+  }
+   else if(heartProducts>1)
+  {
+      heartList.style.bottom = "50%";
+  }
+  else
+  {
+    heartList.style.bottom = "70%";
+  }
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }

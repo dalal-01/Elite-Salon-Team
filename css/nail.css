@@ -32,7 +32,10 @@ body{
     width: 100%;
     height: 100vh;
     animation: animate 20s ease-in-out infinite;
+<<<<<<< HEAD
     background-position: center center;
+=======
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }
 @keyframes animate
 {
@@ -136,7 +139,10 @@ body{
     background-color: rgba(198,182,167,0.9);
 }
 /**/
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 .concept
 {
     background-color: white;
@@ -163,21 +169,31 @@ body{
     background-color: #c6b6a7;
 }
 /**/
+<<<<<<< HEAD
 .contain{
     padding: 0px 200px;
 }
+=======
+
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 .one_right img{
  border-bottom-left-radius: 50%;
  border-bottom-right-radius: 50%;
  border: .5px solid black ;
  margin-bottom:-10%;
+<<<<<<< HEAD
  width: 120%;
+=======
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 }
 
 .two_left img{
     border-radius: 50%;
     border: .5px solid black ;
+<<<<<<< HEAD
     width: 100%;
+=======
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
    }
 .artistic p , .clients p {
     width: 80%;
@@ -191,8 +207,12 @@ body{
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border: .5px solid black ;
+<<<<<<< HEAD
     width: 100%;
     /* height: 100%; */
+=======
+    height: 100%;
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
   
    }
 
@@ -325,10 +345,14 @@ body{
     background-color: #efe3d9;
     padding: 5px 85px;
 }
+<<<<<<< HEAD
 .products .card:hover ,.team .card:hover{
     transition: .3s;
     scale: 1.1;
 }
+=======
+
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
 /**/
 .footer
 {
@@ -405,6 +429,7 @@ body{
     {
         padding-left: 50px;
     }
+<<<<<<< HEAD
     .concept .para1{
         position: relative;
         width: 100%;
@@ -435,6 +460,8 @@ body{
         margin-left:30px;
         margin-bottom:30px;
     }
+=======
+>>>>>>> 49e025b9d99176f38981ceb0c0c3828682582a7e
     .footer .footer-content
     {
      width: 100%;
