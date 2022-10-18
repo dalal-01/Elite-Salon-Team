@@ -77,7 +77,7 @@ fname.onkeyup = function()
 
 phone.onkeyup = function()
 {
-  var phonePattern = /^[0-9]{9}$/;
+  var phonePattern = /^[0-9]{10}$/;
   if(phonePattern.test(phone.value))
    {
     next2.removeAttribute("disabled");
