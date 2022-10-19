@@ -272,6 +272,21 @@ body{
 .sec5 img {
     height: 25rem;
 }
+.sec5 .card {
+    width: 20rem;
+}
+.sec5 .a {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.sec5 a{
+    text-decoration: none;
+    color: #000 ;
+}
+.sec5 a:hover{
+    color: #c6b6a7;
+}
    /* end sec5 */
 
    /* start footer*/
@@ -349,6 +364,89 @@ body{
     {
         padding-left: 50px;
     }
+
+    .hair-cut img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .hair h2{
+        font-size: 1rem;
+    }
+    .hair ul li {
+        font-size: .7rem;
+    }
+    .hair ul {
+        margin-bottom: 2rem;
+    }
+    .hair-ext img {
+        width: 8rem;
+        height: 8rem;
+    }
+    .ext h2 {
+        font-size: .9rem;
+    }
+    .ext p {
+        font-size: .6rem;
+    }
+    .hair-color img {
+        width: 8rem;
+        height: 8rem;
+    }
+    .color h2 {
+        margin-left: .5rem;
+        font-size: .8rem;
+    }
+    .color .row .cl {
+        width: 4rem;
+        height: 4rem;
+    }
+    .hair-pr h2 {
+        font-size: .9rem;
+    }
+    .hair-pr .row .pr {
+        width: 4.5rem;
+        height: 5rem;
+        margin-top: -1rem;
+    }
+    .sec1 .pro img{
+        width: 8rem;
+        height: 8rem;
+        margin-left: 2rem;
+    }
+    .sec2 .nav{
+        margin-left: 4rem;
+    }
+    .sec2 .nav-link{
+        font-size: .6rem;
+    }
+    .sec2 .tab-pane img {
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 1rem;
+    }
+    .sec4 h2 {
+         font-size: 2.1rem;
+         margin-bottom: 1rem;
+     }
+    .sec4 img {
+         width: 5rem;
+         height: 5rem;
+         margin-bottom: 1rem;
+         margin-left: 10rem;
+     }
+    .sec4 p{
+         font-size: .9rem;
+         font-weight: 400;
+     }
+    .sec5 img {
+        height: 25rem;
+    }
+    .sec5 .row {
+        margin-left: .8rem;
+    }
+    .sec5 .card {
+        margin-bottom: 1rem;
+    }
     .footer .footer-content
     {
      width: 100%;
@@ -388,5 +486,65 @@ body{
     {
         padding-left: 50px;
     }
+    .hair-cut img{
+        width: 15rem;
+        height: 15rem;
+    }
+    .hair h2{
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    .hair ul li {
+        font-size: 1rem;
+    }
+    .hair ul {
+        margin-bottom: 8rem;
+    }
+    .hair-ext img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .ext h2 {
+        font-size: 2rem;
+    }
+    .ext p {
+        font-size: 1rem;
+    }
+    .hair-color img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .color h2 {
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+    .color .row .cl {
+        width: 6rem;
+        height: 6rem;
+    }
+    .hair-pr h2 {
+        font-size: 2rem;
+    }
+    .hair-pr .row .pr {
+        width: 8rem;
+        height: 6rem;
+        margin-top: -1rem;
+    }
+    .sec1 .pro img{
+        width: 15rem;
+        height: 15rem;
+        margin-left: 2rem;
+    }
+    .sec2 .nav{
+        margin-left: 10rem;
+    }
 
+    .sec2 .tab-pane img {
+        width: 15rem;
+        height: 15rem;
+        margin-bottom: 1rem;
+    }
+    .sec5 .card {
+        width: 15rem;
+    }
 }

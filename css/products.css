@@ -524,7 +524,6 @@ h3{
         padding-bottom: 60px;
         width: 30% !important;
         position: relative;
-
     }
     .content .nav-link{
         padding: 0px;
@@ -561,6 +560,20 @@ h3{
         font-size: 14px !important;
         padding: 0px;
     } 
+    .bag-list
+    {
+        top: 55px;
+        right: 5px;
+        bottom: 50%;
+        width: 400px;
+    }
+    .heart-list
+    {
+        top: 55px;
+        right: 30px;
+        bottom: 70%;
+        width: 350px;
+    }
     .footer .footer-content
     {
      width: 100%;

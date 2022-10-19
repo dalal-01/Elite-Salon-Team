@@ -74,6 +74,168 @@
     background-color: rgba(198,182,167,0.9);
 }
 /**/
+/* start sec1 */
+.sec1 {
+    background-color:#e6cdba;
+    height: 100vh;
+    position: relative;
+}
+.sec1 img {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 20rem;
+    border-top-left-radius: 15%;
+}
+.sec1 h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 25rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.sec1 .st {
+    font-size: 1.7rem;
+}
+.sec1 .com  {
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 67%;
+    width: 25rem;
+    font-size: 3rem;
+}
+/*end sec1*/
+/* start sec2 */
+.sec2 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #e6cdba;
+}
+.sec2 hr {
+    width: 30%;
+    margin-left: 24rem;
+    color: #78604d;
+}
+.sec2 h5 {
+    transition: all 2s;
+}
+.sec2 h5:hover {
+    color: #e6cdba;
+    transform: scale(1.3);
+
+}
+.sec2 .row {
+    margin: 4rem;
+}
+.sec2 .row img {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1rem;
+}
+.sec2 .dropdown ul li img {
+    width: 5rem;
+    height: 5rem;
+    margin: .5rem;
+    
+}
+.sec2 .mask{
+    color: #e6cdba;
+
+}  
+.sec2 .dropdown .n img {
+    height: 10rem;
+}
+/* end sec2 */
+
+/* start sec3 */
+.sec3{
+    height: 100vh;
+    background-image: url(../img/skincare/bg3.jpg);
+    background-size: cover;
+}
+.sec3 h1 {
+    font-size: 4rem ;
+    font-weight: 600;
+    color:#e6cdba
+}
+.sec3 img {
+    width: 20rem;
+    height: 12rem;
+    margin: .5rem;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    transition: all 2s;
+    cursor: pointer;
+}
+.sec3 img:hover {
+    transform: scale(1.2);
+    
+}
+/* end sec3 */
+
+/* start sec5 */
+.sec5 {
+    height: 100vh;
+    background-color:#efe3d9;
+}
+.sec5 h1 {
+    font-size: 4rem ;
+    font-weight: 600;
+}
+.sec5 .card {
+    width: 15rem;
+    margin: 3rem;
+}
+.sec5 .card img{
+    height: 15rem;
+}
+.sec5 p:hover {
+    color: #c6b6a7;
+
+}
+.sec5 a{
+    text-decoration: none;
+    color: #000;
+}
+.sec5 a:hover{
+    color:#c6b6a7;
+}
+/* end sec5 */
+
+/* start sec6 */
+
+.sec6 h1 {
+    font-size: 4rem ;
+    font-weight: 600;
+    color:#e6cdba
+}
+.sec6 .product {
+    width: 35rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-left: 18rem;
+}
+.sec6 img {
+    text-align: center;
+    width: 10rem;
+    height: 10rem;
+}
+.sec6 .a {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+.sec6 a{
+    text-decoration: none;
+    color: #c6b6a7;
+}
+.sec6 a:hover{
+    color: #000;
+}
+/* end sec6 */
 
 /*footer*/
 /**/
@@ -150,6 +312,64 @@
     {
         padding-left: 50px;
     }
+    .sec1 {
+        height: 40vh;
+    }
+    .sec1 img {
+        position: absolute;
+        top: 36%;
+        left: 35%;
+        width: 8rem;
+    }
+    .sec1 h1 {
+        left: 3%;
+        width: 8rem;
+        font-size: 1rem;
+    }
+    .sec1 .com  {
+        top: 35%;
+        left: 65%;
+        width: 10rem;
+        font-size: 1rem;
+    }
+    .sec1 .st{
+        font-size: .8rem;
+    }
+    .sec2 hr {
+        margin-left: 9rem;
+    }
+    .sec2 .row img {
+        width: 6rem;
+        height: 6rem;
+        margin-top: 2rem;
+    }
+    .sec3 h1 {
+        font-size: 3rem ;
+    }
+    .sec3 img {
+        width: 65%;
+        height: 6rem;
+        margin: .3rem;
+        margin-left: 4rem;
+    }
+    .sec6 .product {
+        width: 25rem;
+        margin-left: 0rem;
+    }
+    .sec5 {
+        height: 60vh;
+    }
+    .sec5 .card {
+        width: 13rem;
+        margin: 0.1rem;
+    }
+    .sec5 .card img{
+        height: 10rem;
+    }
+    .sec5 p {
+        font-size: .6rem;
+    
+    }
     .footer .footer-content
     {
      width: 100%;
@@ -188,6 +408,81 @@
     .navbar .navbar-logo img
     {
         padding-left: 50px;
+    }
+    .sec1 {
+        height: 60vh;
+    }
+    .sec1 img {
+        top: 41%;
+        left: 35%;
+        width: 15rem;
+    }
+    .sec1 h1 {
+        left: 3%;
+        width: 14rem;
+        font-size: 2rem;
+    }
+    .sec1 .com  {
+        top: 35%;
+        left: 65%;
+        width: 16rem;
+        font-size: 3rem;
+    }
+    .sec1 .st{
+        font-size: 1.5rem;
+    }
+    .sec2 hr {
+        margin-left: 16rem;
+    }
+    .sec2 .row .col{
+        margin-left: 5rem;
+    
+    }
+    .sec2 .row img {
+        width: 6rem;
+        height: 6rem;
+        margin: 1rem;
+    }
+    .sec2 h5 {
+        font-size: 1rem;
+        width: 10rem;
+    }
+    .sec2 .dropdown ul li img {
+        width: 4rem;
+        height: 4rem;
+        margin: .3rem; 
+    }
+    .sec2 .mask{
+        font-size: .64rem;
+    }  
+    .sec3 {
+        height: 70vh;
+    }
+    .sec3 h1 {
+        font-size: 4rem ;
+    }
+    .sec3 img {
+        width: 14rem;
+        height: 15rem;
+        margin: .5rem;
+    }
+    .sec6 .product {
+        width: 25rem;
+        margin-left: 10rem;
+    }
+    .sec5 {
+        height: 60vh;
+    }
+    .sec5 .card {
+        width: 15rem;
+        margin: 0.3rem;
+    }
+    .sec5 .card img{
+        height: 15rem;
+    }
+    .sec5 p {
+        font-size: 1rem;
+    
     }
 
 }
