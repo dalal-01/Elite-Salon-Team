@@ -440,7 +440,8 @@ body{
     }
     .navbar .navbar-logo img
     {
-        padding-left: 50px;
+        padding-left: 65px;
+        width: 55%;
     }
     .sec1 {
         height: 40vh;
@@ -467,6 +468,9 @@ body{
     }
     .sec2 hr {
         margin-left: 9rem;
+    }
+    .sec2 .row {
+        margin: 2rem;
     }
     .sec2 .row img {
         width: 6rem;

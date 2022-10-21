@@ -209,10 +209,11 @@ body{
     background-color: #c6b6a7;
 }
 .sec2 .tab-pane img {
-    width: 17rem;
     height: 20rem;
+    padding-left: 10px;
     margin-bottom: 2rem;
     transition: all 2s;
+    text-align: center;
 }
 .sec2 .tab-pane img:hover{
     transform: scale(1.1);
@@ -493,7 +494,8 @@ body{
     }
     .navbar .navbar-logo img
     {
-        padding-left: 50px;
+        padding-left: 65px;
+        width: 55%;
     }
 
     .hair-cut img{

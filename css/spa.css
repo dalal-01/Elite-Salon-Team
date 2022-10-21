@@ -1128,7 +1128,8 @@ margin-bottom: 5px;
     }
     .navbar .navbar-logo img
     {
-        padding-left: 50px;
+        padding-left: 65px;
+        width: 55%;
     }
     .footer .footer-content
     {

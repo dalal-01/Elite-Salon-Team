@@ -467,7 +467,7 @@ color: rgb(0,0,0,.70);
 /*work media*/
 @media (max-width: 500px){
     .ourwork{
-        height: 2530px;
+        height: 265vh;
     }
 
     .img{
@@ -720,7 +720,7 @@ margin-bottom: 5px;
 
 @media (max-width: 500px){
     .product{
-        height: 2292px;
+        height: 3620px;
 
     }
 

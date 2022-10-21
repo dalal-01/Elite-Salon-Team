@@ -457,7 +457,8 @@ background-color:rgb(198, 182, 167);
     }
     .navbar .navbar-logo img
     {
-        padding-left: 50px;
+        padding-left: 65px;
+        width: 55%;
     }
     .concept .para1{
         position: relative;
