@@ -10,10 +10,31 @@
     <link rel="stylesheet" href="css/all.min.css">
     <!-- bootstrap 5 -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!--wow css-->
+    <link rel="stylesheet" href="wow/animate.css">
     <!-- custom css -->
     <link rel="stylesheet" href="css/makeup.css">
   </head>
   <body>
+
+  
+<!--Top Btn-->
+<div class="topBtn">
+  <i class="fa-solid fa-chevron-up"></i>
+</div>
+<!--Top Btn-->
+
+
+<!--loader-->
+<div class="loader justify-content-center align-items-center">
+  <div class="spinner spin">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+</div>
+<!--loader-->
+
+
 <!--start nav-->
 <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid d-flex">
@@ -42,7 +63,6 @@
           <li><a href="makeup.html" >Makeup</a></li>
           <li><a href="skincare.html" >Skin Care</a></li>
           <li><a href="reservation.html" >Reservation</a></li>
-          <li><a href="news.html" >News</a></li>
           <li><a href="products.html" >Our Products</a></li>
         </ul>
       <ul>
@@ -67,10 +87,7 @@
 <!--start header-->
 <header class="d-flex flex-column">
       
-   
-      
-      
-    <h1 class="justify-content-center align-content-center align-items-center">Makeup Is Art</h1>
+    <h1 class="justify-content-center align-content-center align-items-center wow slideInDown" data-wow-duration="1.5s" data-wow-delay="1.2s">Makeup Is Art</h1>
     <h2 class="justify-content-center align-content-center align-items-center text-capitalize">scroll down for some magic</h2>
 
 </header>
@@ -80,20 +97,14 @@
 <section class="photos d-flex justify-content-center align-items-center" id="about">
 <div class="container">
   <div class="row">
-        <div class="slider col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-          <!--<ul>
-          <li><img src="assets/img/photos slide 1.jpg" alt="our salon" class="salon w-100"></li>
-          <li><img src="assets/img/rsz_photos_slid2.jpg" alt="our salon" class="salon w-100"></li>
-          <li><img src="assets/img/photos slide3.jpg" alt="" class="salon w-100"></li>
-          <li><img src="assets/img/photos slide 4.jpg" alt="" class="salon w-100"></li>
-          <li><img src="assets/img/photos slide 5.jpg" alt="" class="salon w-100"></li>
-        </ul>-->
+        <div class="  slider col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center" >
+          
       </div>
   
         <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center align-item-center d-flex flex-column align-content-center">
           <h5 class="">Beauty is you</h5>
           <p>we'll create your perfect lock</p>
-          <a href="" class="btn  ">See Our Services</a>
+         <div class="d-flex justify-content-center"> <a href="#service" class="btn  ">See Our Services</a></div>
         </div>
   
   </div>
@@ -112,7 +123,7 @@
       </div>
 
       <div class="price col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="wow bounceInRight accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -164,10 +175,10 @@
 <!--start our work-->
 <section class="ourwork" id="ourwork">
   <div class="container-fluid">
-    <p class="">Part Of Our Work</p>
+    <h2 class="">Part Of Our Work</h2>
     <div class="row">
       <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="img">
+          <div class="img  wow bounceInRight"  data-wow-duration="1s" data-wow-delay=".3s">
               <img src="img/WhatsApp Image 2022-10-07 at 1.37.45 AM.jpeg" class="w-100" alt="bridel look">
               <div class="descr  ">
                 <p>Bridal Look</p>
@@ -176,7 +187,7 @@
           </div>
       </div>  
       <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="img">
+        <div class="img wow bounceInRight" data-wow-duration="1s" data-wow-delay="1.1s">
             <img src="img/rsz_whatsapp_image_2022-10-07_at_13738_am.jpg" class="w-100" alt="daily look">
             <div class="descr  ">
               <p>Daily Look</p>
@@ -185,7 +196,7 @@
         </div>
     </div>  
     <div class="col-lg-3 col-md-6 col-sm-12">
-      <div class="img">
+      <div class="img wow bounceInRight" data-wow-duration="1s" data-wow-delay="1.5s">
           <img src="img/rsz_whatsapp_image_2022-10-07_at_14107_am.jpg" class="w-100" alt="Night look">
           <div class="descr  ">
             <p>Night Look</p>
@@ -194,7 +205,7 @@
       </div>
   </div>  
   <div class="col-lg-3 col-md-6 col-sm-12">
-    <div class="img">
+    <div class="img wow bounceInRight" data-wow-duration="1s" data-wow-delay="1.9s">
         <img src="img/WhatsApp Image 2022-10-07 at 14452 AM.jpg" class="w-100" alt="Cinematic look">
         <div class="descr  ">
           <p>Cinematic Look</p>
@@ -212,10 +223,10 @@
 <section class="ourartist" id="artist">
 <div class="container">
   <p>Life Is Beautiful When You Meet The Right Makeup Artist</p>
-  <h4>Our Team</h4>
+  <h2>Our Team</h2>
   <div class="row">
-    <div class="first col-lg-4 col-md-4 col-sm-12 ">
-      <div class="card" style="width: 21rem;">
+    <div class="first col-lg-4 col-md-12 col-sm-12 ">
+      <div class="card " style="width: 21rem;">
         <img src="img/h2-t2-150x150.jpg" class="card-img-top" alt="ANGEL SIENNA">
         <div class="card-body">
           <h5 class="card-title">ANGEL SIENNA</h5>
@@ -224,8 +235,8 @@
         </div>
       </div>
     </div>
-    <div class="second col-lg-4 col-md-4 col-sm-12 ">
-      <div class="card" style="width: 21rem;">
+    <div class="second col-lg-4 col-md-12 col-sm-12 ">
+      <div class="card " style="width: 21rem;">
         <img src="img/h2-t1-150x150.jpg" class="card-img-top" alt="MERRY BORK">
         <div class="card-body">
           <h5 class="card-title">MERRY BORK</h5>
@@ -234,8 +245,8 @@
         </div>
       </div>
     </div>
-    <div class="third col-lg-4 col-md-4 col-sm-12 ">
-      <div class="card" style="width: 21rem;">
+    <div class="third col-lg-4 col-md-12 col-sm-12 ">
+      <div class="card " style="width: 21rem;">
         <img src="img/h2-t3-150x150.jpg" class="card-img-top" alt="JENIFFER BURS">
         <div class="card-body">
           <h5 class="card-title">JENIFFER BURS</h5>
@@ -253,11 +264,11 @@
 <!--start our products-->
 <section class="product" id="product">
   <div class="container">
-    <p>Beautiful Products for Beautiful Skin</p>
+    <h2>Beautiful Products for Beautiful Skin</h2>
     <h4>Best Seller From Our Products</h4>
     <div class="row">
       <div class="first col-lg-3 col-md-6 col-sm-12 ">
-        <div class="card" style="width: 19rem;">
+        <div class="wow fadeIn card w-100" style="width: 19rem;" data-wow-duration="2s" data-wow-delay=".7s">
           <img src="img/pro11.jpg" class="card-img-top" alt="Highlighter">
           <div class="card-body">
             <h5 class="card-title">Highlighter</h5>
@@ -269,12 +280,12 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="btn ">BAY NOW</a>
+            <a href="products.html" class="btn ">BUY NOW</a>
           </div>
         </div>
       </div>
       <div class="second col-lg-3 col-md-6 col-sm-12">
-        <div class="card" style="width: 19rem;">
+        <div class="wow fadeIn card w-100" style="width: 19rem;" data-wow-duration="1s" data-wow-delay=".7s">
           <img src="img/pro22.jpg" class="card-img-top" alt="Lipstick">
           <div class="card-body">
             <h5 class="card-title">Lipstick</h5>
@@ -290,12 +301,12 @@
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
             
-            <a href="#" class="btn ">BAY NOW</a>
+            <a href="products.html" class="btn ">BUY NOW</a>
           </div>
         </div>
       </div>
       <div class="third col-lg-3 col-md-6 col-sm-12 ">
-        <div class="card" style="width: 19rem;">
+        <div class="wow fadeIn card w-100" style="width: 19rem;" data-wow-duration="1s" data-wow-delay=".7s">
           <img src="img/pro33.jpg" class="card-img-top" alt="Compact Powder">
           <div class="card-body">
             <h5 class="card-title">Compact Powder</h5>
@@ -307,13 +318,13 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="btn ">BAY NOW</a>
+            <a href="products.html" class="btn ">BUY NOW</a>
           </div>
         </div>
   
       </div>
       <div class="fourth col-lg-3 col-md-6 col-sm-12 ">
-        <div class="card" style="width: 19rem;">
+        <div class="wow fadeIn card w-100" style="width: 19rem;" data-wow-duration="1s" data-wow-delay=".7s">
           <img src="img/pro44.jpg" class="card-img-top" alt="Foundation">
           <div class="card-body">
             <h5 class="card-title">Foundation</h5>
@@ -325,7 +336,7 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
-            <a href="#" class="btn ">BAY NOW</a>
+            <a href="products.html" class="btn ">BUY NOW</a>
           </div>
         </div>
   
@@ -337,20 +348,59 @@
 <!--end our products-->
 
 <!--start footer-->
-<footer class="d-flex justify-content-center align-items-center">
-  <div class="footer-contant ">
-  <p>Elite Gives Your Beautiful face The Glow And Shine It Deserve</p>
-  <h4>BEAUTY IS GOOD FOR THE SOUL</h4>
-  <a href="reservation.html" class="btn mt-3 ">Reservation</a>
-</div>
+<footer class="footer px-3">
+  <div class="footer-content">
+    <img src="img/logo.png" alt="salon logo"/>
+    <p>Want to stay updated? Enter your email and sign up to our mailing list.</p>
+    <form>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp">
+      </div>
+      <button type="submit" class="btn mb-3 ">Submit</button>
+    </form>
+    <ul class="d-flex justify-content-between">
+      <li><a href="#"><i class="fa-brands fa-youtube pe-2"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram pe-2"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-facebook pe-2"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-pinterest pe-2"></i></a></li>
+    </ul>
+  </div>
 </footer>
-<!--end footer-->
+   
+       <!--reservation button-->
+       <div class="reservation">
+        <div class="res">
+          <svg viewBox="0 0 100 100" width="100" height="100">
+            <defs>
+              <path id="circle"
+                d="
+                  M 50, 50
+                  m -37, 0
+                  a 37,37 0 1,1 74,0
+                  a 37,37 0 1,1 -74,0"/>
+            </defs>
+            <text font-size="17" id="test">
+              <textPath xlink:href="#circle">
+                click here to make a reservation
+                
+              </textPath>
+              
+            </text>
+            
+          </svg>
+          <a class="btn" href="reservation.html">reserve</a>
+        </div>
+        <!--reservation button-->
 
-
+    <!-- import wow -->
+    <script src="wow/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <!-- bootstrap 5 -->
     <script src="js/bootstrap.bundle.min.js"></script>
       <!--jquery-->
-    <script src="js/jquery-3.6.1.min.js"></script> 
+    <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

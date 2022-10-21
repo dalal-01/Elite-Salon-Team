@@ -10,11 +10,31 @@
     <link rel="stylesheet" href="css/all.min.css">
     <!-- bootstrap 5 -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!--wow css-->
+    <link rel="stylesheet" href="wow/animate.css">
     <!-- custom css -->
     <link rel="stylesheet" href="css/spa.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg ">
+<!--Top Btn-->
+<div class="topBtn">
+  <i class="fa-solid fa-chevron-up"></i>
+</div>
+<!--Top Btn-->
+
+
+<!--loader-->
+<div class="loader justify-content-center align-items-center">
+  <div class="spinner spin">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+</div>
+<!--loader-->
+
+
+<!--start navbar-->
+<nav class="navbar navbar-expand-lg ">
         <div class="container-fluid d-flex">
           <a class="navbar-logo" href="index.html"><img alt="logo" src="img/logo.png"/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,12 +43,12 @@
           <div class=" collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 d-flex m-auto" >
               <li class="nav-item "><a class="nav-link" href="#">Home</a></li>
-              <li class="nav-item "><a class="nav-link" href="#concept">Concept</a></li>
-              <li class="nav-item "><a class="nav-link" href="#aboutus">About Us</a></li>
+              <li class="nav-item "><a class="nav-link" href="#sections">Sections</a></li>
               <li class="nav-item "><a class="nav-link" href="#ourservices">Our Services</a></li>
-              <li class="nav-item "><a class="nav-link" href="#access">Access</a></li>
-              <li class="nav-item "><a class="nav-link" href="#products">popular Products</a></li>
-              <li class="nav-item "><a class="nav-link" href="#feedback">Feedback</a></li>
+              <li class="nav-item "><a class="nav-link" href="#open">Opening Hours</a></li>
+              <li class="nav-item "><a class="nav-link" href="#team">Our Team</a></li>
+              <li class="nav-item "><a class="nav-link" href="#product">popular Products</a></li>
+              
             </ul>
           </div>
           <i class="fa-solid fa-bars menu-bar" id="menubar"></i>
@@ -42,7 +62,6 @@
                 <li><a href="makeup.html" >Makeup</a></li>
                 <li><a href="skincare.html" >Skin Care</a></li>
                 <li><a href="reservation.html" >Reservation</a></li>
-                <li><a href="news.html" >News</a></li>
                 <li><a href="products.html" >Our Products</a></li>
               </ul>
             <ul>
@@ -61,10 +80,360 @@
             </div>
           </div>
         </div>
-      </nav>
+</nav>
+<!--end navbar-->
 
-       <!--start footer section-->
-       <footer class="footer px-3">
+<!--start header-->
+<header>
+<div class="container">
+    <div class="row ">
+      <div class="rounded-circle head-slider col-lg-6 ">
+
+      </div>
+      <div class="col-lg-4 head-contant">
+        <h1 class="wow slideInDown" data-wow-duration="1.5s" data-wow-delay="1s" >Relax , Enjoy and Love Yourself with <span> ELITE SPA</span> </h1>
+      </div >
+      
+    </div>
+</div>
+</header>
+<!--end header-->
+
+<!--start service-->
+<section class="service py-5" id="sections">
+  <div class="container">
+    <div class="title text-center mb-5 ">
+      <p>BODY AND SOUL</p>
+      <h2>Our Service To Revitalize Your Beauty And Soul</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="wow pulse img-thumbnail sauna col-lg-4 col-md-4 col-sm-12 me-5" data-wow-duration="1.5s" data-wow-delay=".8s">
+        <div class="con sauna-contant">
+          <p class="pt-3 pb-1 ms-4">Sauna </p>
+          <h3  class="ms-3">NATURAL HEALTH</h3>
+        </div>
+      </div>
+
+      <div class="wow pulse img-thumbnail massage col-lg-4 col-md-4 col-sm-12 me-5" data-wow-duration="1.5s" data-wow-delay=".8s">
+        <div class="con massage-contant ">
+          <p class="pt-3 pb-1 ms-4">Massage</p>
+          <h3 class="ms-3">MIND RELAXATION</h3>
+        </div>
+      </div>
+
+      <div class="wow pulse img-thumbnail beauty col-lg-4 col-md-4 col-sm-12 " data-wow-duration="1.5s" data-wow-delay=".8s">
+        <div class="con  beauty-contant">
+          <p class="pt-3 pb-1 ms-4">Body Treatments</p>
+          <h3 class="ms-3">SKIN BEAUTY</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+</section>
+<!--end service-->
+
+
+<!--start sections and price-->
+<section class="price" id="ourservices">
+<div class="container">
+    <div class="sauna-price py-5">
+
+
+      <div class="contant-price pb-5 justify-content-center">
+          <img class=" rounded-circle" src="img/spa/rsz_007-hot-tub-1.png" alt="sauna">
+          <h2 class="text-center">NATURAL HEALTH</h2>
+      </div>
+
+
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6 col-sm-12 paraa saunaa d-flex justify-content-center align-items-center me-5">
+          <p class="text-white text-center">SAUNA MASSAGE</p>
+          <div class="item-hov d-flex justify-content-center align-items-center h-100 w-100">
+            <div class="item-hov-cont text-center text-white ">
+              <h3 class="mb-5">SAUNA MASSAGE</h3>
+              <ul class="mb-5">
+                <li><p>-Sauna Relax(20min)</p></li>
+                <li><p>-Sauna With Massage(50min)</p></li>
+              </ul>
+              <p>50.00$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 paraa water d-flex justify-content-center align-items-center">
+          <p class="text-white text-center">NATURAL SALTS &<br> MINERAL WATER</p>
+          <div class="item-hov d-flex justify-content-center align-items-center h-100 w-100">
+            <div class="item-hov-cont text-center text-white ">
+              <h3 class="mb-5">NATURAL SALTS &<br> MINERAL WATER</h3>
+              <ul class="mb-5">
+                <li><p>-Thermal Spa(20min)</p></li>
+                <li><p>-Mineral Water Bathtub(40min)</p></li>
+              </ul>
+              <p>70.00$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="massage-price py-5">
+
+      <div class="contant-price  pb-5 justify-content-center">
+        <img class=" rounded-circle" src="img/spa/rsz_008-hot-stone-1.png" alt="hot stons">
+        <h2 class="text-center">MIND RELAXATION</h2>
+      </div>
+
+
+
+      <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-6 col-sm-12 paraa relax d-flex justify-content-center align-items-center me-5">
+            <p class="text-white text-center ">RELAX MASSAGE</p>
+            <div class="item-hov d-flex justify-content-center align-items-center h-100 w-100">
+              <div class="item-hov-cont text-center text-white ">
+                <h3 class="mb-5">RELAX MASSAGE</h3>
+              <ul class="mb-5">
+                <li><p>-Back Massage(30min)</p></li>
+                <li><p>-Face Massage(20min)</p></li>
+              </ul>
+                <p>40.00$</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-6 col-md-6 col-sm-12 paraa hot-stons d-flex justify-content-center align-items-center">
+            <p class="text-white text-center ">HOT-STONS MASSAGE</p>
+            <div class="item-hov d-flex justify-content-center align-items-center h-100 w-100">
+              <div class="item-hov-cont text-center text-white ">
+                <h3 class="mb-5">HOT-STONS MASSAGE</h3>
+              <ul class="mb-5">
+                <li><p>-Hot-Stons With Scrub(30min)</p></li>
+                <li><p>-Hot-Stons With Massage(50min)</p></li>
+              </ul>
+                <p>80.00$</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="beauty-price py-5">
+      <div class="contant-price pb-5 justify-content-center">
+        <img class=" rounded-circle" src="img/spa/rsz_017-body-scrub-1-1_1.png" alt="body scrub">
+        <h2 class="text-center">SKIN BEAUTY</h2>
+      </div>
+
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6 col-sm-12 paraa scrub d-flex justify-content-center align-items-center me-5">
+          <p class="text-white text-center ">BODY SCRUB</p>
+          <div class="item-hov d-flex justify-content-center align-items-center h-100 w-100">
+            <div class="item-hov-cont text-center text-white ">
+              <h3 class="mb-5">BODY SCRUB</h3>
+              <ul class="mb-5">
+                <li><p>-Organic Sea Salt Scrub(40min)</p></li>
+                <li><p>-Dead Sea Scrub(20min)</p></li>
+              </ul>
+              <p>30.00$</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-6 col-sm-12 paraa oli d-flex justify-content-center align-items-center">
+          <P class="text-white text-center ">BODY SOFTNESS</P>
+          <div class="item-hov d-flex justify-content-center align-items-center h-100 w-100">
+            <div class="item-hov-cont text-center text-white ">
+              <h3 class="mb-5">BODY SOFTNESS</h3>
+              <ul class="mb-5">
+                <li><p>-Moisturizing Oil Massage(30min)</p></li>
+                <li><p>-Deep Body Hydration(40min)</p></li>
+              </ul>
+             
+              <p>20.00$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+<!--end sections and price-->
+
+<!--stat opening hours-->
+<section class="hours" id="open">
+<div class="container">
+    <div class="hours-contant d-flex align-items-center py-5">
+      <img class="wow bounceInLeft img-thumbnail hours-img" data-wow-duration=".7s" data-wow-delay=".5s" src="img/spa/rsz_img8 (1).jpg" alt="open hours">
+      <div class="wow bounceInRight hoursDiv" data-wow-duration=".7s" data-wow-delay=".5s">
+        <div class="divCont">
+          <h2 class="mt-5 ms-3">Opening Hours</h2><hr>
+          <p class="mt-3 ms-3">Our Magical SPA Services Are Offered At</p>
+          <ul class="mt-4 ms-2">
+            <li class="d-flex justify-content-between"><p>- Sunday To Tuesday:</p> <p class="me-3"> 09:00 - 17:00 hrs</p></li>
+            <li class="d-flex justify-content-between"><p>- Wednesday: </p>   <p class="me-3"> 09:00 - 14:00 hrs</p></li>
+            <li class="d-flex justify-content-between"><p>- Thursday: </p>     <p class="me-3"> 09:00 - 12:00 hrs</p></li>
+          </ul>
+          <a class="btn    mt-2 ms-5" href="reservation.html">BOOK NOW</a>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+<!--end opening hours-->
+
+
+<!--start our team-->
+<section class="team" id="team">
+<div class="container">
+
+    <h2 class="ourTeam text-center mt-5">Our Team</h2>
+    <p class="teamPara text-center mb-5">Relax, You're In Good Hands</p>
+
+    <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center" data-bs-ride="true">
+      <div class="carousel-indicators  ">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active  " aria-current="true" aria-label="Slide 1"></button>
+        <button   type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2 " ></button>
+        <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" ></button>
+      </div>
+      <div class="carousel-inner text-center pb-5">
+        <div class="carousel-item active   ">
+          <img class="rounded-circle" src="img/spa/team-1.jpg" class="d-block w-100" alt="Stacey Richardson">
+          <h3 class="pt-3">Stacey Richardson</h3>
+          <p>Beauty Expert </p>
+          <div class="iconn d-flex justify-content-center">
+            <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+           
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="rounded-circle" src="img/spa/team-3.jpg" class="d-block w-100" alt="Rodney Stratton">
+          <h3 class="pt-3">Rodney Stratton</h3>
+          <p>SPA Master</p>
+          <div class="iconn d-flex justify-content-center">
+            <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+           
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="rounded-circle" src="img/spa/team-4.jpg" class="d-block w-100" alt="Jane Smith">
+          <h3 class="pt-3">Jane Smith</h3>
+          <p>Beauty Therapist</p>
+          <div class="iconn d-flex justify-content-center">
+            <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+           
+          </div>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon b" aria-hidden="true"></span>
+        <span class="visually-hidden ">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon b" aria-hidden="true"></span>
+        <span class="visually-hidden ">Next</span>
+      </button>
+    </div>
+
+
+</div>
+</section>
+<!--end our team-->
+
+
+<!--start our products-->
+<section class="product" id="product">
+  <div class="container">
+    <h2>Beautiful Products for Beautiful Skin</h2>
+    <h4>Best Seller From Our Products</h4>
+    <div class="row">
+      <div class="first col-lg-3 col-md-6 col-sm-12 ">
+        <div class="card w-100" style="width: 19rem;">
+          <img src="img/spa/rsz_1pro44.jpg" class="card-img-top" alt="Body Lotion">
+          <div class="card-body">
+            <h5 class="card-title">Body Lotion</h5>
+            <p>30.00$</p>
+            <div class="icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="products.html" class="btn ">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="second col-lg-3 col-md-6 col-sm-12">
+        <div class="card w-100" style="width: 19rem;">
+          <img src="img/spa/pro2.jpg" class="card-img-top" alt="Body Scrub">
+          <div class="card-body">
+            <h5 class="card-title">Body Scrub</h5>
+            <div>
+            <p>20.00$</p>
+            <!--<i class="fa-solid fa-dollar-sign"></i>-->
+          </div>
+            <div class="icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            
+            <a href="products.html" class="btn ">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="third col-lg-3 col-md-6 col-sm-12 ">
+        <div class="card w-100" style="width: 19rem;">
+          <img src="img/spa/pro3.jpg" class="card-img-top" alt="Body Mask">
+          <div class="card-body">
+            <h5 class="card-title">Body Mask</h5>
+            <p>40.00$</p>
+            <div class="icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="products.html" class="btn ">BUY NOW</a>
+          </div>
+        </div>
+  
+      </div>
+      <div class="fourth col-lg-3 col-md-6 col-sm-12 ">
+        <div class="card w-100" style="width: 19rem;">
+          <img src="img/spa/pro4.jpg" class="card-img-top" alt="Massage Oli">
+          <div class="card-body">
+            <h5 class="card-title">Massage Oli</h5>
+            <p>50.00$</p>
+            <div class="icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="products.html" class="btn ">BUY NOW</a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+</section>
+<!--end our products -->
+
+<!--start footer section-->
+<footer class="footer px-3">
         <div class="footer-content">
           <img src="img/logo.png" alt="salon logo"/>
           <p>Want to stay updated? Enter your email and sign up to our mailing list.</p>
@@ -81,13 +450,43 @@
             <li><a href="#"><i class="fa-brands fa-pinterest pe-2"></i></a></li>
           </ul>
         </div>
-      </footer>
-    <!--end footer section-->
+</footer>
+<!--end footer section-->
+       <!--reservation button-->
+       <div class="reservation">
+        <div class="res">
+          <svg viewBox="0 0 100 100" width="100" height="100">
+            <defs>
+              <path id="circle"
+                d="
+                  M 50, 50
+                  m -37, 0
+                  a 37,37 0 1,1 74,0
+                  a 37,37 0 1,1 -74,0"/>
+            </defs>
+            <text font-size="17" id="test">
+              <textPath xlink:href="#circle">
+                click here to make a reservation
+                
+              </textPath>
+              
+            </text>
+            
+          </svg>
+          <a class="btn" href="reservation.html">reserve</a>
+        </div>
+       </div>
+        <!--reservation button-->
 
+  <!-- import wow -->
+  <script src="wow/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>  
   <!-- bootstrap 5 -->
   <script src="js/bootstrap.bundle.min.js"></script> 
   <!--jquery-->
-  <script src="js/jquery-3.6.1.min.js"></script> 
+  <script src="js/jquery-3.6.1.min.js"></script>
   <!--custom js-->
   <script src="js/main.js"></script>
 </body>

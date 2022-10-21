@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.37/sweetalert2.min.css">
     <!-- bootstrap 5 -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!--wow css-->
+    <link rel="stylesheet" href="wow/animate.css">
     <!-- custom css -->
     <link rel="stylesheet" href="css/products.css">
 </head>
@@ -21,7 +23,7 @@
           <a class="navbar-logo" href="index.html"><img alt="logo" src="img/logo.png"/></a>
           <div class="ms-auto">
             <button type="button" class="heart-btn btn me-2">
-              <i class="fa-solid fa-heart" id="heartBtn"></i>
+              <i class="fa-solid  fa-heart-circle-check" id="heartBtn"></i>
             </button>
             <button type="button" class="bag-btn btn position-relative pe-4">
               <i class="fa-solid fa-bag-shopping" id="bag"></i>
@@ -61,8 +63,8 @@
         </div>
       </nav>
      <header class="header d-flex flex-column justify-content-center  align-items-center ">
-          <h1 class="text-center">Elite Salon</h1>
-      </header>
+      <h1 class="text-center wow hinge" data-wow-duration="3s" data-wow-delay=".3s">Elite Salon</h1>      
+    </header>
 
       <section class="prod">
         <div class="content py-5 ">
@@ -93,11 +95,11 @@
                 tabindex="0">
                 <div class="row">
                   <div class="col-md-3">
-                    <img src="img/face/1.jpg" alt="">
-                    <p>glam glow starter </p>
+                    <img src="img/face/1.png" alt="">
+                    <p>Bloom line </p>
                     <div class="details  d-flex justify-content-between pt-1">
                       <i class="fa-solid fa-heart"></i>
-                      <h3>30$</h3>
+                      <h3>85$</h3>
                     </div>
                     <div class="icon">
                       <i class="fa-solid fa-star-half-stroke"></i>
@@ -151,7 +153,7 @@
                   </div>
                   <div class="col-md-3">
                     <img src="img/face/6.jpg" alt="">
-                    <p>glam glow starter 2 </p>
+                    <p>glam glow starter 1 </p>
                     <div class="details d-flex justify-content-between pt-1">
                       <i class="fa-solid fa-heart"></i>
                       <h3>54$</h3>
@@ -162,7 +164,7 @@
                   </div>
                   <div class="col-md-3">
                     <img src="img/face/7.jpg" alt="">
-                    <p>glam glow starter 3</p>
+                    <p>glam glow starter 2</p>
                     <div class="details d-flex justify-content-between pt-1">
                       <i class="fa-solid fa-heart"></i>
                       <h3>20$</h3>
@@ -1140,7 +1142,7 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid "></i>
             </div>
-            <button type="button" class="addBasket btn btn-dark w-75 py-2  mx-3 fs-4">Add to Basket</button>
+            <button type="button" class="addBasket btn btn-dark w-75 py-2  mx-3">Add to Basket</button>
             <button type="button" class="addHeart btn btn-outline-danger w-75 py-2  mx-3 fs-4 mt-4">Add to Love</button>
       
           </div>
@@ -1202,7 +1204,19 @@
         </div>
       </footer>
     <!--end footer section-->
-  
+    
+        <!--Top Btn-->
+        <div class="topBtn">
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <!--Top Btn-->
+
+        
+  <!-- import wow -->
+  <script src="wow/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
   <!--sweet alert-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.37/sweetalert2.all.min.js" integrity="sha512-3hFcDwNjb1Fi8b5SvvrvkoWHniN7awVYfdULoVIYRXIdIh6nX/0HUwp7ELi1VzxZuXCGwhUfXxQ3vnOD6COAmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- bootstrap 5 -->
@@ -1210,6 +1224,6 @@
   <!--jquery-->
   <script src="js/jquery-3.6.1.min.js"></script> 
   <!--custom js-->
-  <script src="js/main.js" async></script>
+  <script src="js/products.js" async></script>
 </body>
 </html>

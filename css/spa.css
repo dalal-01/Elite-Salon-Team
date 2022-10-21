@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +11,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+/*start nav*/
 .navbar
 {
     position: fixed;
@@ -75,6 +82,927 @@
 }
 /**/
 
+/*header*/
+
+
+header{
+    background-image: url('../img/spa/home-1-background-img-500.png');
+    background-color: #e7dcd1;
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 800px;
+}
+
+
+
+
+.head-slider{
+    background-image: url('../img/spa/homespa.jpg');
+    margin-left: 20px;
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+animation: animate 40s ease-in-out infinite;
+height: 600px;
+width:600px;
+margin-top: 130px;
+
+
+}
+
+
+@keyframes animate
+{
+    15%{
+        background-image: url("../img/spa/bg222.png");
+    }
+    30%
+    {
+        background-image: url("../img/spa/bg5.jpeg");
+    }
+    45%
+    {
+        background-image: url("../img/spa/bg7.jpeg");
+    }
+    60%
+    {
+        background-image: url("../img/spa/bg111.jpeg");
+    }
+    75%
+    {
+        background-image: url("../img/spa/bg333.png");
+    }
+    85%
+    {
+        background-image: url("../img/spa/bg8.jpeg");
+    }
+    95%
+    {
+        background-image: url("../img/spa/bg10.jpeg");
+    }
+}
+
+
+.head-contant{
+    margin-top: 330px;
+    
+    color: rgba(0, 0, 0,0.8);
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 8px;
+}
+
+.head-contant span{
+    color: black;
+}
+
+
+
+
+
+
+
+/*header media*/
+@media (max-width: 500px) {
+
+
+
+    header{
+        
+        height: 716px;
+    }
+
+    .head-slider{
+       
+        margin-left: 5px;
+        
+    height: 426px;
+    width:380px;
+    margin-top: 104px;
+    
+    
+    }
+
+    .head-contant{
+        margin-top: 22px;
+        
+        
+        text-align: center;
+        line-height: 60px;
+        letter-spacing: 6px;
+    }
+}
+
+
+@media (max-width: 955px) and (min-width:501px){
+    header{
+        
+        height: 877px;
+    }
+
+    .head-slider{
+       
+        margin-left: 63px;
+        
+    height: 597px;
+    width:614px;
+    margin-top: 104px;
+    
+    
+    }
+
+    .head-contant{
+        margin-top: 45px;
+        
+        font-weight: 700;
+        text-align: center;
+        line-height: 60px;
+        letter-spacing: 6px;
+    }
+}
+
+/*end header*/
+
+
+
+
+
+
+
+/*service*/
+.service{
+    border-top:4px solid #9a8775;
+}
+
+.title p{
+font-size: 20px;
+line-height: 10px;
+letter-spacing: 10px;
+font-weight: 600;
+font-family: 'Cormorant Garamond', serif;
+
+}
+
+
+.title h2{
+    font-size: 35px;
+line-height: 30px;
+letter-spacing: 3px;
+font-weight: 700;
+font-family: 'Cormorant Garamond', serif;
+}
+
+
+.sauna{
+    background-image: url('../img/spa/h1-banner-03.jpg');
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 500px;
+   
+    width: 400px;
+}
+
+.massage{
+    background-image: url('../img/spa/01.jpg');
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 500px;
+    
+    width: 400px;
+}
+
+
+.beauty{
+    background-image: url('../img/spa/img-8.jpg');
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 500px;
+    
+    width: 400px;
+}
+
+.con{
+    
+    
+    background-color: rgb(231, 206, 188,.8);
+    height: 100px;
+    width: 360px;
+    margin-top: 350px;
+}
+
+.con:hover{
+    background-color: rgb(231, 206, 188);
+}
+.con p{
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 1px;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(0,0,0);
+}
+.con h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
+}
+
+
+
+
+/*service media*/
+
+@media (max-width: 500px){
+
+    .title p{
+        font-size: 20px;
+        line-height: 10px;
+        letter-spacing: 10px;
+        font-weight: 900;
+
+        
+        }
+        
+        
+        .title h2{
+            font-size: 31px;
+        line-height: 34px;
+        letter-spacing: 3px;
+        font-weight: 700;
+        
+        }
+
+        .sauna{
+            margin-right: 0px !important;
+            margin-bottom: 40px;
+            width: 90%;
+        }
+
+        .massage{
+            margin-right: 0px !important;
+            margin-bottom: 40px;
+            width: 90%;
+        }
+
+
+        .beauty{
+            width: 90%;
+        }
+        
+        .con{
+            
+            
+
+            width: 324px;
+
+        }
+
+
+
+
+}
+
+
+
+@media (max-width: 955px) and (min-width:501px){
+    .title p{
+        font-size: 31px;
+        line-height: 10px;
+        letter-spacing: 10px;
+        font-weight: 900;
+        margin-bottom: 31px;
+
+        
+        }
+        
+        
+        .title h2{
+            font-size: 44px;
+        line-height: 46px;
+        letter-spacing: 3px;
+        font-weight: 700;
+        
+        }
+
+        .sauna{
+            margin-right: 0px !important;
+            margin-bottom: 40px;
+            width: 90%;
+        }
+
+        .massage{
+            margin-right: 0px !important;
+            margin-bottom: 40px;
+            width: 90%;
+        }
+
+
+        .beauty{
+            width: 90%;
+        }
+        
+        .con{
+            
+            
+
+            width: 324px;
+
+        }
+
+
+
+}
+
+
+
+
+
+
+/*end service*/
+
+
+
+.price{
+    border-top:4px solid #9a8775;
+}
+
+.saunaa{
+    background-image: url('../img/spa/price3.jpg');
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 500px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.water{
+    background-image: url('../img/spa/price4.jpg');
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 500px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.relax{
+    background-image: url('../img/spa/price1.jpg');
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 500px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+
+.hot-stons{
+    background-image: url('../img/spa/price2.jpg');
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 500px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.scrub{
+    background-image: url('../img/spa/price5.jpg');
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 500px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.oli{
+    background-image: url('../img/spa/price6.jpg');
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 500px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+
+
+.contant-price {
+    text-align: center;
+    
+}
+
+.contant-price h2{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.paraa p{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+
+
+
+.item-hov{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgb(231, 206, 188,.95);
+}
+
+.item-hov-cont ul li p {
+    font-size: 20px;
+}
+.item-hov:hover{
+    opacity: 1;
+}
+.item-hov-cont{
+    font-size: 1.5rem;
+}
+
+
+
+/*price media*/
+@media (max-width: 500px){
+
+
+    .saunaa{
+       
+        margin-right: 0px !important;
+        margin-bottom: 40px;
+        width: 90%;
+    }
+
+
+    .water{
+        margin-right: 0px !important;
+        
+        width: 90%;
+    }
+    
+    .relax{
+        margin-right: 0px !important;
+        margin-bottom: 40px;
+        width: 90%;
+    }
+    
+    
+    .hot-stons{
+        margin-right: 0px !important;
+        
+        width: 90%;
+    }
+    
+    .scrub{
+        margin-right: 0px !important;
+        margin-bottom: 40px;
+        width: 90%;
+    }
+    
+    .oli{
+        margin-right: 0px !important;
+        
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 955px) and (min-width:501px){
+    .saunaa{
+
+        margin-right: 0px !important;
+        margin-bottom: 40px;
+        width: 90%;
+    }
+
+
+    .water{
+        margin-right: 0px !important;
+        
+        width: 90%;
+    }
+    
+    .relax{
+        margin-right: 0px !important;
+        margin-bottom: 40px;
+        width: 90%;
+    }
+    
+    
+    .hot-stons{
+        margin-right: 0px !important;
+        
+        width: 90%;
+    }
+    
+    .scrub{
+        margin-right: 0px !important;
+        margin-bottom: 40px;
+        width: 90%;
+    }
+    
+    .oli{
+        margin-right: 0px !important;
+        
+        width: 90%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*end price*/
+
+
+
+/*hours*/
+.hours{
+    background-image: url('../img/spa/parallax3.png');
+    background-size:cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 600px;
+    border-top:4px solid #9a8775;
+    background-color: rgb(246,247,237);
+}
+
+.hoursDiv{
+    display: inline-block;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+   
+    left: 800px;
+}
+
+.hours-img{
+   border-color: #9a8775;
+   position: relative;
+   top: 0;
+   left: 0;
+   margin-left: 250px;
+}
+
+.divCont h2{
+    color: rgba(0, 0, 0,0.6);
+}
+hr{
+    width: 50%;
+}
+.divCont a{
+    width: 40%;
+    padding: 5px;
+    
+    border-color:#a4907e ;
+    color: #a4907e;
+}
+
+
+
+
+
+
+/*hours media*/
+@media (max-width: 500px){
+    .hours{
+
+        height: 770px;
+
+    }
+
+    .hours-contant{
+        padding-top: 70px !important;
+    }
+
+    .hours-img{
+
+        margin-left: 2px;
+    }
+
+    .hoursDiv{
+        
+        width: 400px;
+        height: 400px;
+        top:6680px;
+        left: -7px;
+    }
+
+
+
+
+
+
+
+}
+
+@media (max-width: 955px) and (min-width:501px){
+    .hours{
+
+        height: 770px;
+
+    }
+
+    .hours-contant{
+        padding-top: 70px !important;
+    }
+
+    .hours-img{
+
+        margin-left: 2px;
+    }
+
+    .hoursDiv{
+        
+        width: 400px;
+        height: 400px;
+        top:6732px;
+        left: 332px;
+    }
+
+}
+/*end hours*/
+
+
+/*our team*/
+
+.team{
+    border-top:4px solid #9a8775;
+    height: 550px;
+    background-color: #e4ceba;
+}
+
+.ourTeam{
+    
+        font-family: 'Alex Brush', cursive;
+        font-size: 6rem;
+        line-height: 1;
+        letter-spacing: 2px;
+        opacity: .15;
+        color: #503935;
+        position: relative;
+        margin-top: -30px;
+        margin-bottom: -45px;
+    
+}
+
+.teamPara{
+    position: absolute;
+    top: 10;
+    left: 490px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.carousel-item{
+    margin-top: 80px;
+}
+
+.iconn a{
+    color: rgba(0, 0, 0,0.6);
+    font-size: 25px;
+}
+
+/*team media*/
+@media (max-width: 500px){
+    .team{
+       
+        height: 560px;
+        
+       
+    }
+    .ourTeam{
+        margin-top: -30px;
+        font-size: 5rem;
+      
+        opacity: .5;
+        color: #000000;
+    }
+
+    .teamPara{
+        
+        display: none;
+    }
+
+    .carousel-item{
+        margin-top: 103px;
+    }
+    
+}
+
+@media (max-width: 955px) and (min-width:501px){
+    .ourTeam{
+        margin-top: -30px;
+        font-size: 5rem;
+
+        opacity: .5;
+        color: #000000;
+    }
+
+    .teamPara{
+            
+        display: none;
+
+    }
+}
+
+/*end team*/
+
+
+/*pro*/
+.product{
+    height: 750px;
+    border-top:4px solid #9a8775;
+}
+.product .card{
+    border: none;
+    height: 540px;
+}
+
+.product .card:hover{
+    border: 2px solid #000000;
+}
+
+
+
+.product h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    font-family: 'Cormorant Upright', serif;
+font-family: 'Oswald', sans-serif;
+letter-spacing: 2px;
+}
+
+.product h4{
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 10px;
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+margin-bottom: 50px;
+
+}
+
+.product .card p{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color:#a4907e;
+    font-family: 'Cormorant Upright', serif;
+font-family: 'Oswald', sans-serif;
+letter-spacing: 2px;
+}
+
+.product .card h5{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+margin-bottom: 5px;
+}
+
+
+.icon {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon i{
+    color: #f9c854;
+}
+
+.card{
+    text-align: center;
+}
+
+.card-body a{
+    
+    
+    border-color:#000000 ;
+    color: #000000;
+}
+
+.card-body a:hover{
+    text-align: center;
+    background-color: #000000;
+    border-color:#000000 ;
+    color: #ffffff;
+}
+
+
+/*pro media*/
+
+
+@media (max-width: 500px){
+    .product{
+        height: 2900px;
+       
+    }
+
+    .product h2{
+       
+        margin-top: 67px;
+        margin-bottom: 38px;
+       
+    }
+
+    .card{
+        margin-bottom: 50px;
+       
+    }
+
+    .product .card{
+        border: none;
+        height: 624px;
+    }
+
+    .product h4{
+        display: none;
+    }
+}
+
+
+@media (max-width: 955px) and (min-width:501px){
+    .product{
+        height: 1676px;
+       
+    }
+
+    
+
+    .card{
+        margin-bottom: 50px;
+       
+    }
+
+    .product .card{
+        border: none;
+        height: 614px;
+    }
+
+    .product h2{
+        margin-top: 67px;
+        margin-bottom: 38px;
+        font-size: 3rem;
+        
+    letter-spacing: 2px;
+    }
+    
+    .product h4{
+       
+        font-size: 29px;
+        letter-spacing: 10px;
+        margin-top: 15px;
+       
+    margin-bottom: 50px;
+    
+    }
+    
+
+}
+
+
+
+
+/*end pro*/
+
 
 /*footer*/
 /**/
@@ -123,6 +1051,57 @@
     border: 1px solid black;
     border-radius: 50%;
     text-align: center;
+}
+
+.reservation{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    z-index: 99999;
+    display: none;
+}
+.reservation .btn{
+    z-index: 999;
+    position: absolute;
+    margin-left: -84px;
+    margin-top: 14px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    line-height: 50px;
+    padding-left: 7px;
+}
+.reservation .btn:hover{
+    border: none;
+    background-color: #c6b6a788;
+}
+.res{
+   
+    min-width: 5vw;
+    margin: 5vh auto;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+  }
+  #test{
+    font-weight: 900;
+    color: #394add;
+    font-size: 10px;
+    display: inline-block;
+    margin-bottom: 128px;
+    position: relative;
+    border: 1px solid #f00;
+    transform: scale(1);
+    transform-origin: center center;
+    animation: rotation 5s linear infinite;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
 }
 /**/
 @media (max-width: 500px) 
@@ -192,3 +1171,96 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/*loader*/
+
+.loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgb(228, 219, 211);
+    z-index: 999999999999999;
+    display: flex;
+}
+body{
+    overflow: hidden;
+}
+
+
+.spinner {
+    width: 60px;
+    height: 60px;
+  
+    position: relative;
+    margin: 100px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color:#b19580;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+
+
+  /*loader*/
+
+
+  /*top button*/
+  .topBtn{
+    background-color:rgb(198, 182, 167);
+    color: white;
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99999999999999;
+    border:2px solid rgb(198, 182, 167);
+    display: none;
+
+  }
+  /*top button*/

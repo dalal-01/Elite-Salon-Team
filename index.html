@@ -10,11 +10,23 @@
   <link rel="stylesheet" href="css/all.min.css">
   <!-- bootstrap 5 -->
   <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <!--wow css-->
+  <link rel="stylesheet" href="wow/animate.css">
   <!-- custom css -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg ">
+
+  <!--loader-->
+<div class="loader justify-content-center align-items-center">
+  <div class="spinner spin">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+</div>
+<!--loader-->
+
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid d-flex">
       <a class="navbar-logo" href="index.html"><img alt="logo" src="img/logo.png"/></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +34,7 @@
       </button>
       <div class=" collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 d-flex m-auto" >
-          <li class="nav-item "><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item "><a class="nav-link " href="#home">Home</a></li>
           <li class="nav-item "><a class="nav-link" href="#concept">Concept</a></li>
           <li class="nav-item "><a class="nav-link" href="#aboutus">About Us</a></li>
           <li class="nav-item "><a class="nav-link" href="#ourservices">Our Services</a></li>
@@ -61,11 +73,11 @@
       </div>
     </div>
   </nav>
-  <header class="header d-flex flex-column justify-content-center algin-items-center align-items-center">
+  <header class="header d-flex flex-column justify-content-center algin-items-center align-items-center" id="home">
     <div class="overlay text-center">
-      <p class="mt-5">Time for change?</p>
-      <h1>Elite Salon</h1>
-      <p>is your choice</p>
+      <p class="mt-5 wow slideInDown" data-wow-duration=".5s" data-wow-delay="1s">Time for change?</p>
+      <h1 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="2s">Elite Salon</h1>
+      <p class="wow slideInDown" data-wow-duration="1s" data-wow-delay="1s">is your choice</p>
     </div>
   </header>
 
@@ -96,7 +108,9 @@
           The scope of our services includes many techniques and procedures - we have a hair department with many modern and distinctive hair styles and hair styling in a way that suits the customer’s personality, and we have a skin care department and we also provide suitable and safe products for that, we also provide a special department for nail care, in our place, you have A chance to 
           take care of your precious hair, sip fine whiskey and listen to great music.</p>
        </div>
-       <div class="col-md-6"><img src="img/aboutus.jpg" class="w-100" alt="elite salon"/></div>
+       <div class="col-md-6 wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s">
+        <img src="img/aboutus.jpg" class="w-100" alt="elite salon"/>
+      </div>
      </div>
     </div>
    </section> 
@@ -167,7 +181,7 @@
             <p>CLOSE: FRI AND SAT </p>
             <a href="reservation.html"><button type="button" class="btn mt-4">Book Appointment</button></a>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay=".5s">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433348.1593795709!2d36.395705650000004!3d31.946447700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca11efa89672b%3A0xcda6c063f0d37b42!2sElite%20Salon!5e0!3m2!1sar!2s!4v1664645201573!5m2!1sar!2s" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -180,61 +194,45 @@
       <div class="products" id="products">
         <div class="container py-5">
           <h2 class="w-100 text-center mb-5">See what's popular</h2>
-          <div class="row">
-            <div class="col-md-3">
+          <div class="row text-center">
+            <div class="col-lg-3 col-md-6">
               <img src="img/product1.jpg" alt=""/>
-              <div class="product-reac d-flex justify-content-between">
+              <div class="product-reac m-auto d-flex justify-content-around">
                 <div class="d-flex pt-3">
                   <i class="fa-solid fa-heart"></i>
                   <p>603</p>
                 </div>
-                <div class="d-flex pt-3">
-                  <i class="fa-solid fa-comment"></i>
-                  <p>50</p>
-                </div>
-                <button>share</button>
+                <a href="products.html">See More</a>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
               <img src="img/product2.jpg" alt=""/>
-              <div class="product-reac d-flex justify-content-between">
+              <div class="product-reac d-flex m-auto justify-content-around">
                 <div class="d-flex pt-3">
                   <i class="fa-solid fa-heart"></i>
                   <p>1033</p>
                 </div>
-                <div class="d-flex pt-3">
-                  <i class="fa-solid fa-comment"></i>
-                  <p>120</p>
-                </div>
-                <button>share</button>
+                <a href="products.html">See More</a>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
               <img src="img/product3.jpg" alt=""/>
-              <div class="product-reac d-flex justify-content-between">
+              <div class="product-reac d-flex m-auto justify-content-around">
                 <div class="d-flex pt-3">
                   <i class="fa-solid fa-heart"></i>
                   <p>533</p>
                 </div>
-                <div class="d-flex pt-3">
-                  <i class="fa-solid fa-comment"></i>
-                  <p>33</p>
-                </div>
-                <button>share</button>
+                <a href="products.html">See More</a>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
               <img src="img/product4.jpg" alt=""/>
-              <div class="product-reac d-flex justify-content-between">
+              <div class="product-reac d-flex m-auto justify-content-around">
                 <div class="d-flex pt-3">
                   <i class="fa-solid fa-heart"></i>
                   <p>1205</p>
                 </div>
-                <div class="d-flex pt-3">
-                  <i class="fa-solid fa-comment"></i>
-                  <p>193</p>
-                </div>
-                <button>share</button>
+                <a href="products.html">See More</a>
               </div>
             </div>
           </div>
@@ -306,6 +304,43 @@
       </footer>
     <!--end footer section-->
 
+    <!--Top Btn-->
+    <div class="topBtn">
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <!--Top Btn-->
+    
+    <!--reservation button-->
+    <div class="reservation">
+      <div class="res">
+        <svg viewBox="0 0 100 100" width="100" height="100">
+          <defs>
+            <path id="circle"
+              d="
+                M 50, 50
+                m -37, 0
+                a 37,37 0 1,1 74,0
+                a 37,37 0 1,1 -74,0"/>
+          </defs>
+          <text font-size="17" id="test">
+            <textPath xlink:href="#circle">
+              click here to make a reservation
+              
+            </textPath>
+            
+          </text>
+          
+        </svg>
+        <a class="btn" href="reservation.html">reserve</a>
+      </div>
+      </div>
+       <!--reservation button-->
+
+  <!-- import wow -->
+  <script src="wow/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>      
   <!-- bootstrap 5 -->
   <script src="js/bootstrap.bundle.min.js"></script> 
   <!--jquery-->

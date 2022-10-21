@@ -120,3 +120,32 @@ $(window).scroll(function(){
       $(".navbar").css("background-color","transparent");
    }
 });
+
+
+//loading screen
+$(document).ready((function(){
+   $('.spinner').fadeOut(1000)  
+   $('.loader').slideUp(2000)
+   $('body').css('overflow','unset');
+ 
+ }))
+ ///loading screen
+
+ /*top button*/
+$(window).scroll(function () {
+   let t = $(window).scrollTop();
+   if (t >= 100) {
+     
+      $('.topBtn').css('display','block')
+   } else {
+     
+      $('.topBtn').css('display','none')
+   }
+ });
+ 
+ 
+ 
+ $('.topBtn').click(function(){
+   $(window).scrollTop(0)
+ })
+ /*top button*/

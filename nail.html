@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/icon.png">
   <title>Elite Salon - Nails</title>
+  <!-- import wow -->
+  <link rel="stylesheet" href="wow/animate.css">
   <!-- font awesome 6 -->
   <link rel="stylesheet" href="css/all.min.css">
   <!-- bootstrap 5 -->
@@ -14,6 +16,19 @@
   <link rel="stylesheet" href="css/nail.css">
 </head>
 <body>
+        <!--loader-->
+    <div class="loader justify-content-center align-items-center">
+      <div class="spinner spin">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+      <!--loader-->
+      <!--Top Btn-->
+      <div class="topBtn">
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <!--Top Btn-->
    <!-- start nav section -->
    <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid d-flex">
@@ -44,7 +59,6 @@
             <li><a href="makeup.html" >Makeup</a></li>
             <li><a href="skincare.html" >Skin Care</a></li>
             <li><a href="reservation.html" >Reservation</a></li>
-            <li><a href="news.html" >News</a></li>
             <li><a href="products.html" >Our Products</a></li>
           </ul>
         <ul>
@@ -70,56 +84,61 @@
   <header class="header d-flex flex-column justify-content-center  align-items-center ">
     <div class=" text-center">
       <p class="mt-5">Give Your Nails Sweet Treat</p>
-      <h1>Elite Salon</h1>
+      <h1 class="wow slideInDown" data-wow-duration="1.5s" data-wow-delay="1.3s">Elite Salonss</h1>
       <p>Where nails meet creativity</p>
+     
     </div>
   </header>
+
+  </section> 
+  
+
   <!-- end header section -->
-  <div class="container" id="concept">
-  <div class="artistic ">
-    <div class="one d-flex justify-content-between">
-      <div class="one_right">
-       <img   src="img/one_1.jpg" alt="nail art designs" >
+  <div class="contain" id="concept">
+    <div class="artistic ">
+      <div class="one d-flex justify-content-between">
+        <div class="one_right">
+         <img   src="img/one.jpg" alt="nail art designs" >
+        </div>
+        <div class="one_left d-flex flex-column justify-content-center  align-items-center ">
+          <h2>Be artistic with your nails </h2>
+          <p class=" m-0">Chic, modern, intricate and detailed nail art designs. Express yourself with a customized nail arts you desire. Be trendy and unique!</p>
+  
+        </div>
+  
       </div>
-      <div class="one_left d-flex flex-column justify-content-center  align-items-center ">
-        <h2>Be artistic with your nails </h2>
-        <p class="pt-5">Chic, modern, intricate and detailed nail art designs. Express yourself with a customized nail arts you desire. Be trendy and unique!</p>
-
+      <div class="two d-flex justify-content-between">
+        <div class="two_right d-flex flex-column justify-content-center  align-items-center ">
+          <h2>Pamper your feet </h2>
+          <p class="">Your feet never take a day off, so make sure to treat them at the salon.</p>
+  
+        </div>
+        <div class="two_left">
+         <img   src="img/two-2.jpg" alt="nail art designs" >
+        </div>
+        
+  
       </div>
-
-    </div>
-    <div class="two d-flex justify-content-between">
-      <div class="two_right d-flex flex-column justify-content-center  align-items-center ">
-        <h2>Pamper your feet </h2>
-        <p class="pt-5">Your feet never take a day off, so make sure to treat them at the salon.</p>
-
+      <div class="three d-flex justify-content-between " >
+        <div class="three_right">
+         <img   src="img/three-1.jpg" alt="nail art designs" >
+        </div>
+        <div class="three_left d-flex flex-column justify-content-center  align-items-center ">
+          <h2>Reveal the colorful you </h2>
+          <p class="">Pick your favorite color and put a little extra on it. Let your nails be the center of every occasion.</p>
+  
+        </div>
+  
       </div>
-      <div class="two_left">
-       <img   src="img/rsz_two.jpg" alt="nail art designs" >
-      </div>
-      
-
-    </div>
-    <div class="therr d-flex justify-content-between " style="margin-top: -50px;">
-      <div class="three_right">
-       <img   src="img/three.jpg" alt="nail art designs" >
-      </div>
-      <div class="three_left d-flex flex-column justify-content-center  align-items-center ">
-        <h2>Reveal the colorful you </h2>
-        <p class="pt-5">Pick your favorite color and put a little extra on it. Let your nails be the center of every occasion.</p>
-
-      </div>
-
     </div>
   </div>
-</div>
   <div class="clients  " id="aboutus">
     <div class="container d-flex justify-content-between">
-    <div class="clients_left">
+    <div class="clients_left col-md-4 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".3s">
     <img  class="rounded rounded-4" src="img/client.png" alt="">
     
     </div>
-    <div class="clients_right d-flex flex-column justify-content-center  align-items-center">
+    <div class="clients_right col-md-8 d-flex flex-column justify-content-center  align-items-center">
       <h2>Why Our Clients Choose Us </h2>
       <p class="pt-5 ">Our salon aims to deliver the best nail design experience and top-notch customer service.</p>
       <p class="para">We use all-natural, organic body products, hard-to-find polish brands and colors, iPads at every seat, and a drink menu featuring fresh-pressed juices and hand-crafted coffees.</p>
@@ -168,16 +187,13 @@
   <div class="container ">
     <div class="row">
   <div class="price_left col-md-6 ">
-    <div class="imgs ">
-  <img class=" img rounded rounded-4"  src="img/nail.jpg" alt="">
-  
-  
-
+    <div class="imgs wow bounceInLeft" data-wow-duration="3s" data-wow-delay=".3s">
+  <img class="  img rounded rounded-4"  src="img/nail.jpg" alt="">
 </div>
   </div>
 
   <div class="price_right col-md-5 offset-md-1 pt-5">
-    <h2 class="py-3">Treatments & Prices</h2>
+    <h2 class="py-3 fs-1 text-center">Treatments & Prices</h2>
     <div class="cont d-flex justify-content-between py-1">
       <div class="type">
        <h3>Manicure</h3>
@@ -219,8 +235,34 @@
 </div>
 </div> 
 
+<div class="reservation">
+<div class="res">
+  <svg viewBox="0 0 100 100" width="100" height="100">
+    <defs>
+      <path id="circle"
+        d="
+          M 50, 50
+          m -37, 0
+          a 37,37 0 1,1 74,0
+          a 37,37 0 1,1 -74,0"/>
+    </defs>
+    <text font-size="17" id="test">
+      <textPath xlink:href="#circle">
+        click here to make a reservation
+        
+      </textPath>
+      
+    </text>
+    
+  </svg>
+  <a class="btn" href="reservation.html">reserve</a>
+  
+</div>
+
+</div>
+
 <div class="treat">
-  <span>Treat yourself to a mani-pedi </span>
+  <marquee SCROLLAMOUNT=20 VSPACE=10 WIDTH="100% "> Treat yourself to a mani-pedi</marquee>
 </div>
 
 
@@ -267,7 +309,7 @@
 </div>
 <div class="comments py-3 pt-5" id="reviews">
   <div class="container">
-    <h2 class="text-center">Comments & Reviews</h2>
+    <h2 class="text-center fs-1">Comments & Reviews</h2>
     <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center" data-bs-ride="true">
       <div class="carousel-indicators  ">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
@@ -309,34 +351,59 @@
     <h2 class="text-center">Our Nail Products</h2>
     <p class="text-center">See what's popular</p>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4  wow fadeInRight" data-wow-duration="3s" data-wow-delay=".3s">
           <div class="card  d-flex flex-column justify-content-center  align-items-center " style="width: 18rem;">
             <img  src="img/Product 1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Aceton Remover</h5>
-              <p class="card-text text-center">$ 20.00</p>
+              <p class="card-text text-center mb-1">$ 20.00</p>
+              <div class="icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
             </div>
           </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 wow fadeInRight" data-wow-duration="3s" data-wow-delay="1s">
         <div class="card  d-flex flex-column justify-content-center  align-items-center " style="width: 18rem;">
           <img  src="img/Product  2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">Feet Cream</h5>
-            <p class="card-text text-center">$ 23.00</p>
+            <p class="card-text text-center mb-1">$ 23.00</p>
+            <div class="icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
           </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 wow fadeInRight" data-wow-duration="3s" data-wow-delay="1.7s">
       <div class="card  d-flex flex-column justify-content-center  align-items-center " style="width: 18rem;">
         <img  src="img/Product 3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title text-center">Shimmer Polish</h5>
-          <p class="card-text text-center">$ 15.00</p>
+          <h5 class="card-title text-center ">Shimmer Polish</h5>
+          <p class="card-text text-center mb-1">$ 15.00</p>
+          <div class="icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
         </div>
       </div>
   </div>
     </div>
+    <div class=" d-flex justify-content-center align-items-center pt-5 wow fadeInUp" data-wow-duration="3s" data-wow-delay="2.1s">
+    <a class="btn" href="products.html">Buy Now</a>
+  </div>
+   
   </div>
 </div>
 
@@ -358,7 +425,11 @@
     </ul>
   </div>
 </footer>
-
+  <!-- import wow -->
+  <script src="wow/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
   <!-- bootstrap 5 -->
   <script src="js/bootstrap.bundle.min.js"></script>  
   <!--jquery-->

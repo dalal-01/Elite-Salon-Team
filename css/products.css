@@ -492,6 +492,27 @@ h3{
     border-radius: 50%;
     text-align: center;
 }
+
+/*top button*/
+.topBtn{
+    background-color:rgb(198, 182, 167);
+    color: white;
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99999999999999;
+    border:2px solid rgb(198, 182, 167);
+    display: none;
+
+  }
+  /*top button*/
+
 /**/
 @media (max-width: 500px) 
 {   .navbar-collapse
@@ -518,6 +539,23 @@ h3{
     .navbar .navbar-logo img
     {
         padding-left: 50px;
+    }
+    .number .mt-3{
+        margin: 0 !important;
+    }
+    .next {
+        right: 7px;
+        color: #242323;
+        font-size: 30px;
+    }
+    .prev {
+        left: 7px;
+        color: #242323;
+        font-size: 30px;
+    }
+    .close {
+        top: 20%;
+        color: #FFF  
     }
     .col-md-3 {
         margin: 6px;
@@ -612,6 +650,24 @@ h3{
     .navbar .navbar-logo img
     {
         padding-left: 50px;
+    }
+    .col-md-3 {
+        width: 30%;
+    }
+    .number{
+        width: 380px;
+    }
+    .slide .slide-item {
+       left: 26%;
+    }
+    .next ,.prev {
+    
+        color: #242323;
+       
+    }
+    .close {
+        top: 20%;
+        color: #FFF  
     }
 
 }

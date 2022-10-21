@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="css/skincare.css" />
+    <!-- wow css -->
+    <link rel="stylesheet" href="css/animate.css">
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -58,6 +61,7 @@
               <li><a href="makeup.html">Makeup</a></li>
               <li><a href="skincare.html">Skin Care</a></li>
               <li><a href="reservation.html">Reservation</a></li>
+              
               <li><a href="products.html">Our Products</a></li>
             </ul>
             <ul>
@@ -81,12 +85,12 @@
     <section class="sec1" id="1">
       <div class="row">
         <div class="col-md-4">
-          <h1>" The beauty of your skin is our priority. "</h1>
+          <h1 class="wow fadeInLeft" data-wow-duration="3s" data-wow-delay=".05s" >" The beauty of your skin is our priority. "</h1>
         </div>
         <div class="col-md-4">
-          <img src="img/skincare/header.png" alt="header" />
+          <img class="wow slideInDown" data-wow-duration="3.5s" data-wow-delay=".05s" src="img/skincare/header.png" alt="header" />
         </div>
-        <div class="com col-md-4">
+        <div class="com col-md-4 wow fadeInRight" data-wow-duration="5s" data-wow-delay=".05s" >
           <i class="fa-sharp fa-solid fa-quote-right"></i>
           <p class="st">
             " Satisfaction! Satisfaction! Satisfaction! My experience as a first
@@ -100,7 +104,7 @@
     <!--start sec2-->
     <section class="sec2" id="2">
       <div class="container">
-        <h1 class="text-center m-4">Our Services</h1>
+        <h2 class="text-center m-4">Our Services</h2>
         <hr />
         <div class="row  text-center">
           <div class="col-md-3 col">
@@ -229,14 +233,14 @@
     <!--start sec3-->
     <section class="sec3" id="3">
       <div class="container">
-        <h1 class="text-center p-3">Before & After</h1>
-        <div class="row">
-          <div class="col-md-4"><img src="img/skincare/bf0.jpg" alt="" /></div>
-          <div class="col-md-4"><img src="img/skincare/bf1.jpg" alt="" /></div>
-          <div class="col-md-4"><img src="img/skincare/bf2.jpg" alt="" /></div>
-          <div class="col-md-4"><img src="img/skincare/bf3.jpg" alt="" /></div>
-          <div class="col-md-4"><img src="img/skincare/bf4.jpg" alt="" /></div>
-          <div class="col-md-4"><img src="img/skincare/bf5.jpg" alt="" /></div>
+        <h2 class="text-center p-3">Before & After</h2>
+        <div class="row ">
+          <div class="col-md-4  wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".05s"><img src="img/skincare/bf0.jpg" alt="" /></div>
+          <div class="col-md-4  wow fadeInDown" data-wow-duration="2s" data-wow-delay=".05s"><img src="img/skincare/bf1.jpg" alt="" /></div>
+          <div class="col-md-4 wow fadeInRight" data-wow-duration="4s" data-wow-delay=".05s"><img src="img/skincare/bf2.jpg" alt="" /></div>
+          <div class="col-md-4 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".05s"><img src="img/skincare/bf3.jpg" alt="" /></div>
+          <div class="col-md-4 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".05s"><img src="img/skincare/bf4.jpg" alt="" /></div>
+          <div class="col-md-4 wow fadeInRight" data-wow-duration="4s" data-wow-delay=".05s"><img src="img/skincare/bf5.jpg" alt="" /></div>
         </div>
       </div>
     </section>
@@ -245,7 +249,7 @@
     <!--start sec6-->
     <section class="sec6" id="4">
         <div class="container">
-          <h1 class="text-center  mt-5 ">Products</h1>
+          <h2 class="text-center  mt-5 ">Products</h2>
           <div class="product text-center">
             <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
               <div class="carousel-indicators pt-5">
@@ -293,9 +297,9 @@
     <!--start sec5-->
     <section class="sec5" id="5">
       <div class="container">
-        <h1 class="text-center p-2 text-white">Our Team</h1>
+        <h2 class="text-center p-2 text-white">Our Team</h2>
         <div class="d-flex justify-content-center align-items-center m-3">
-          <div class="card" >
+          <div class="card wow fadeInRight" data-wow-duration="1s" data-wow-delay=".05s" >
             <img src="img/skincare/d0.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <p class="card-text text-center">Dr. Lilian Macario</p>
@@ -306,7 +310,7 @@
               </div>
             </div>
           </div>
-          <div class="card" >
+          <div class="card wow fadeInRight" data-wow-duration="3s" data-wow-delay=".05s" >
             <img src="img/skincare/d1.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <p class="card-text text-center">Dr. Anna Andres</p>
@@ -317,7 +321,7 @@
               </div>
             </div>
           </div>
-          <div class="card" >
+          <div class="card wow fadeInRight" data-wow-duration="5s" data-wow-delay=".05s" >
             <img src="img/skincare/d2.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <p class="card-text text-center">Dr. Sarah Moris</p>
@@ -371,7 +375,49 @@
       </div>
     </footer>
     <!--end footer section-->
+    <!--loader-->
+    <div class="loader justify-content-center align-items-center">
+      <div class="spinner spin">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+    <!--loader-->
+    <!--Top Btn-->
+    <div class="topBtn">
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <!--Top Btn-->
 
+        <!--reservation button-->
+        <div class="reservation">
+          <div class="res">
+            <svg viewBox="0 0 100 100" width="100" height="100">
+              <defs>
+                <path id="circle"
+                  d="
+                    M 50, 50
+                    m -37, 0
+                    a 37,37 0 1,1 74,0
+                    a 37,37 0 1,1 -74,0"/>
+              </defs>
+              <text font-size="17" id="test">
+                <textPath xlink:href="#circle">
+                  click here to make a reservation
+                  
+                </textPath>
+                
+              </text>
+              
+            </svg>
+            <a class="btn" href="reservation.html">reserve</a>
+          </div>
+          </div>
+           <!--reservation button-->
+
+    <!--wow -->
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <!-- bootstrap 5 -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!--jquery-->
